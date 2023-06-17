@@ -1,0 +1,250 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Popup CSS */
+
+.react-responsive-modal-modal {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.react-responsive-modal-closeButton {
+  display: none !important;
+}
+
+/* Srolllbar CSS */
+
+/* Firefox */
+.search_scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #E6E6E6;
+  margin-right: 7px;
+
+}
+
+/* Chrome, Edge, and Safari */
+.search_scroll::-webkit-scrollbar {
+  width: 7.91px;
+}
+
+.search_scroll::-webkit-scrollbar-track {
+  background: #E6E6E6;
+  border-radius: 5px;
+}
+
+.search_scroll::-webkit-scrollbar-thumb {
+  background-color: #B3B3B3;
+  border-radius: 14px;
+}
+
+/* Admin scroll bar */
+
+.admin_sidrbar_scroll {
+  scrollbar-width: auto;
+  scrollbar-color: #E6E6E6;
+  cursor: context-menu;
+}
+
+/* Chrome, Edge, and Safari */
+.admin_sidrbar_scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.admin_sidrbar_scroll::-webkit-scrollbar-track {
+  background: #E6E6E6;
+  border-radius: 5px;
+}
+
+.admin_sidrbar_scroll::-webkit-scrollbar-thumb {
+  background-color: #B3B3B3;
+  border-radius: 14px;
+}
+
+/* Swiper CSS */
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  border-radius: 50px;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  padding: 22px;
+  color: #000 !important;
+  fill: black !important;
+  stroke: black !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+
+}
+
+/* .contents .object-cover {
+
+} */
+
+@media screen and (max-width:640px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: white;
+    border-radius: 20px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    padding: 16px;
+    width: 20px !important;
+    height: 20px !important;
+    color: #000 !important;
+    fill: black !important;
+    stroke: black !important;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 15px !important;
+    font-weight: 700;
+
+  }
+}
+
+/* @media screen and (width:768px) {
+  .mySwiper{
+    width: 540px !important;
+  }
+} */
+
+@media screen and (min-width: 768px){
+  .mySwiper{
+    width: 820px !important;
+  }
+}
+
+@media screen and (min-width : 1586px) and (max-width:3840px) {
+  .header{
+    border: 1pt solid ;
+    margin-left: 0px ;
+    margin-right: 0px;
+    width: 100% !important;
+  }
+}
+
+/* @media screen and (min-width:768px) and (max-width:1021px) {
+  .mySwiper{
+    width: 800px !important;
+  }
+} */
+
+/*  */
+
+/* Ranger */
+.progress {
+  background: linear-gradient(to right, #82CFD0 0%, #82CFD0 40%, #fff 40%, #fff 100%) !important;
+}
+
+
+/* date picker calender CSS */
+
+.ticket::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(./assests/icon.png) no-repeat;
+  border-width: thin;
+}
+
+
+/* Nested Dropdown CSS */
+
+.actions>ul {
+  transform: translatex(100%) scale(0)
+}
+
+.actions:hover>ul {
+  transform: translatex(-101%) scale(1)
+}
+
+.actions>button svg {
+  transform: rotate(-90deg)
+}
+
+.actions:hover>button svg {
+  transform: rotate(-270deg)
+}
+
+/* Below styles fake what can be achieved with the tailwind config
+   you need to add the group-hover variant to scale and define your custom
+   min width style.
+   See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+   for implementation with config file
+*/
+.group:hover .group-hover\:scale-100 {
+  transform: scale(1)
+}
+
+.group:hover .group-hover\:-rotate-180 {
+  transform: rotate(180deg)
+}
+
+.scale-0 {
+  transform: scale(0)
+}
+
+.min-w-32 {
+  min-width: 8rem
+}
+
+
+/* Checkbox CSS */
+input[type="checkbox"].check_box:checked {
+  accent-color: #FF8C00;
+  color: white;
+}
+
+/* Search car detail CSS */
+@media screen and (width:280px) {
+  .testimation{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .testimation_list{
+    padding-top: 20px;
+    padding-left: 0px !important;
+  }
+  .testimation_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+  }
+  .right_Section{
+    margin-top: 0px !important;
+  }
+}
+
+/* Footer CSS */
+@media screen and (width:280px) {
+.list_items{
+  display: flex;
+  flex-wrap: wrap;
+}
+.list_items_right{
+  padding-left: 0 !important;
+  padding-bottom: 20px;
+}
+.footer_bottom{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%
+}
+.fotter_bottom_heading{
+  margin:0px !important
+}
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
