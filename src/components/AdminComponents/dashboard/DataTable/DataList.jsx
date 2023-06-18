@@ -191,42 +191,42 @@ const DataList = ({ setDetail, setRentalUser }) => {
                 <thead className="text-xs font-[500] bg-[#FFF8EF] border-0">
                   <tr className="text-[#606060]">
                     <th className="px-4 py-4 pr-[25px] whitespace-nowrap w-px">
-                      <div className="font-[500] text-[14px] text-left">
+                      <div className="font-[600] text-[14px] text-left">
                         Vehicle Owner{" "}
                       </div>
                     </th>
                     <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                      <div className="font-[500] text-[14px] text-left">
+                      <div className="font-[600] text-[14px] text-left">
                         Brand
                       </div>
                     </th>
                     <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                      <div className="font-[500] text-[14px] text-left">
+                      <div className="font-[600] text-[14px] text-left">
                         Date
                       </div>
                     </th>
                     <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                      <div className="font-[500] text-[14px] text-left">
+                      <div className="font-[600] text-[14px] text-left">
                         Vehicle Type
                       </div>
                     </th>
                     <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                      <div className="font-[500] text-[14px] text-left">
+                      <div className="font-[600] text-[14px] text-left">
                         Greater Abidjan{" "}
                       </div>
                     </th>
                     <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                      <div className="font-[500] text-[14px] text-left">
+                      <div className="font-[600] text-[14px] text-left">
                         Driver{" "}
                       </div>
                     </th>
                     <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                      <div className="font-[500] text-[14px] text-left">
+                      <div className="font-[600] text-[14px] text-left">
                         Status{" "}
                       </div>
                     </th>
                     <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                      <div className="font-[500] text-[14px] text-center">
+                      <div className="font-[600] text-[14px] text-center">
                         Action{" "}
                       </div>
                     </th>
@@ -379,7 +379,7 @@ const DataList = ({ setDetail, setRentalUser }) => {
                               color: `${item?.status_object?.text_color}`,
                               backgroundColor: `${item?.status_object?.background_color}`,
                             }}
-                            className={`text-center py-[3px] w-fit px-2.5 text-[12px] leading-4 rounded-full `}
+                            className={`text-center py-[5px] w-fit px-2.5 text-[12px] font-medium leading-4 rounded-full `}
                           >
                             {item?.status_object?.text_en}
                           </div>
@@ -449,7 +449,7 @@ const DataList = ({ setDetail, setRentalUser }) => {
                                               color: `${st.color}`,
                                               backgroundColor: `${st.bgColor}`,
                                             }}
-                                            className={`text-center py-[3px] px-2.5 w-auto text-[12px] rounded-full`}
+                                            className={`text-center py-[3px] px-2.5 w-auto text-[12px] font-medium rounded-full`}
                                           >
                                             {st.Title}
                                           </div>
@@ -492,7 +492,7 @@ const DataList = ({ setDetail, setRentalUser }) => {
           <div className="flex lg:flex-nowrap md:flex-nowrap flex-wrap justify-between items-center pt-6 ">
             <div className="flex items-center w-full">
               <h2 className="text-[#333333] text-[14px]">Show</h2>
-              <select className="border focus:outline-none rounded-md px-5 py-2 mx-3">
+              <select className="border border-[#E0E7ED] bg-white focus:outline-none rounded-md px-4 py-2 mx-3">
                 <option value="6">6</option>
                 <option value="12">12</option>
                 <option value="25">25</option>

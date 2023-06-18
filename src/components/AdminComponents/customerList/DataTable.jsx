@@ -7,7 +7,7 @@ const DataTable = ({setDetail}) => {
     return (
         <>
             <div className='flex justify-between items-center'>
-                <h2 className='text-[14.4px] leading-[20.16px] font-medium text-[#444444]'>New Vehicle Deposit Requests</h2>
+                <h2 className='text-[14.4px] leading-[20.16px] font-semibold text-[#444444]'>New Vehicle Deposit Requests</h2>
                 <div className='flex '>
                     <div className='bg-white shadow-sm rounded-full border flex items-center px-2 w-[380px] py-2'>
                         <MdSearch className='text-[25px] text-[#FF8C00]' />

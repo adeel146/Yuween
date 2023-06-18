@@ -47,10 +47,10 @@ const SignUp = () => {
     <>
       <div className='flex lg:flex-row flex-col  justify-between'>
         <div className='text-center lg:order-0 md:order-0 order-1  w-full lg:pt-[3rem] pt-[3rem] '>
-          <h2 className='text-[34px]'>Sign Up</h2>
+          <h2 className='text-[34px] text-[#444] font-semibold'>Sign up</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className='max-w-[600px] lg:m-auto md:m-auto mx-5 lg:mb-0 md:mb-0 mb-5   '>
-              <div className='grid grid-cols-2 gap-20'>
+              <div className='grid grid-cols-2 gap-10'>
                 <div className='flex flex-col items-start pt-[1rem]'>
                   <label className='text-[#444444] pb-2 text-[16px]'>*First Name </label>
                   <input type="text" {...register('first_name')} className={`px-2  outline-none border h-[40px] w-full rounded-md border-gray-300 ${errors.first_name && 'border-red-500'}`} />

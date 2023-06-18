@@ -127,28 +127,28 @@ const DataList = ({ setDetail, setRentalUser, vehicalList, setVehicalList, loadi
                                         <tr className='text-[#626973]'>
 
                                             <th className="px-4 py-4 pr-[25px] whitespace-nowrap w-px">
-                                                <div className="font-[500] text-[14px] text-left">Vehicle Owner </div>
+                                                <div className="font-[600] text-[14px] text-left">Vehicle Owner </div>
                                             </th>
                                             <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                                                <div className="font-[500] text-[14px] text-left">Brand</div>
+                                                <div className="font-[600] text-[14px] text-left">Brand</div>
                                             </th>
                                             <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                                                <div className="font-[500] text-[14px] text-left">Date</div>
+                                                <div className="font-[600] text-[14px] text-left">Date</div>
                                             </th>
                                             <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                                                <div className="font-[500] text-[14px] text-left">Vehicle Type</div>
+                                                <div className="font-[600] text-[14px] text-left">Vehicle Type</div>
                                             </th>
                                             <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                                                <div className="font-[500] text-[14px] text-left">Greater Abidjan </div>
+                                                <div className="font-[600] text-[14px] text-left">Greater Abidjan </div>
                                             </th>
                                             <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                                                <div className="font-[500] text-[14px] text-left">Driver  </div>
+                                                <div className="font-[600] text-[14px] text-left">Driver  </div>
                                             </th>
                                             <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                                                <div className="font-[500] text-[14px] text-left">Status  </div>
+                                                <div className="font-[600] text-[14px] text-left">Status  </div>
                                             </th>
                                             <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
-                                                <div className="font-[500] text-[14px] text-center">Action  </div>
+                                                <div className="font-[600] text-[14px] text-center">Action  </div>
                                             </th>
 
                                         </tr>

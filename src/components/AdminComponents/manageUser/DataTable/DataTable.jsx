@@ -28,7 +28,7 @@ const DataTable = ({ setDetail, setRentalUser }) => {
     return (
         <>
             <div className='flex lg:flex-nowarp  flex-wrap justify-between items-center'>
-                <h2 className='text-[14.4px] leading-[20.16px] font-medium text-[#444444]'>New Vehicle Deposit Requests</h2>
+                <h2 className='text-[14.4px] leading-[20.16px] font-semibold text-[#444444]'>New Vehicle Deposit Requests</h2>
                 <div className='flex lg:flex-nowrap xxtra-small:w-full xtra-small:w-full xtra-small:flex-nowrap md:flex-nowrap flex-wrap lg:my-0 my-3'>
                     <SearchBar setVehicalList={(val) => setVehicalList(val)} setLoading={setLoading} />
                     {

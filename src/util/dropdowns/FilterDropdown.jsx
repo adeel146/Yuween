@@ -66,7 +66,7 @@ function FilterDropdown({ setVehicalList, setLoading , setTypes}) {
         onClick={() => setDropdownOpen(!dropdownOpen)}
         aria-expanded={dropdownOpen}
       >
-        <h2> {filterList} </h2>
+        <h2 className='font-medium text-[#444]'> {filterList} </h2>
         <MdOutlineKeyboardArrowDown className='text-[20px] ml-2' />
       </button>
 
