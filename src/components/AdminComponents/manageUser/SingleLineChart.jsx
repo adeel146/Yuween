@@ -49,7 +49,11 @@ export const options = {
         font: {
           size: 8.64,
         },
+        stepSize: 100,
       },
+      min: 0,
+      max: 200,
+      stepSize: 100,
     },
   },
   plugins: {
@@ -88,7 +92,7 @@ const DashboardChart = () => {
     "18th",
   ];
   const valdashboard = [0, 1000, 1500, 2000, 2500, 3000];
-  const valuser = [0, 100, 150, 50];
+  const valuser = [20, 35, 155, 25, 120];
   const data = {
     labels: location === "/dashboard" ? label2 : label,
     datasets: [
@@ -116,17 +120,17 @@ const DashboardChart = () => {
         <h2 className="text-[#98A2B3] text-[12px] font-medium pl-[53px]">
           By month
         </h2>
-        <h2 className="text-[#98A2B3] text-[12px] font-medium">
+        <h2 className="text-[#98A2B3] text-[12px] font-medium ">
           Avg. Daily Requests
         </h2>
       </div>
 
-      <div className="flex items-center xl:w-full  ">
+      <div className="flex items-center xl:w-full h-full  ">
         <h1 className="[writing-mode:vertical-rl] rotate-180 text-[12px] text-[#98A2B3]">
           Request
         </h1>
         <Line
-          className="xl:w-full 2xl:!w-full md:!w-[624px] xxtra-small:!w-[350px] xtra-small:!w-[480px] tablet:!w-[550px] 2xl:sidebar-expanded:!w-full sidebar-expanded:!w-full lg:!h-[230px] xl:!h-[230px] sidebar-expanded:!h-[230px]"
+          className="!w-full !h-full"
           options={options}
           data={data}
           redraw={true}
