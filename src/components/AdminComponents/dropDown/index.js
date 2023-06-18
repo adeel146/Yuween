@@ -47,7 +47,7 @@ function CommonDropDown(props) {
     <div className="relative inline-flex xtra-small:w-full xxtra-small:w-full">
       <button
         ref={trigger}
-        className={`  flex border border-[#CDD2E1] h-[42px] items-center w-full px-5 py-[10px] justify-between bg-white transition duration-150 rounded-sm ${
+        className={`  flex border border-[#CDD2E1] h-[42px] items-center w-full px-2 py-[10px] justify-between bg-white transition duration-150 rounded-sm ${
           dropdownOpen && "bg-slate-200"
         } xxtra-small:ml-0 xtra-small:ml-0`}
         aria-haspopup="true"
@@ -55,7 +55,7 @@ function CommonDropDown(props) {
         aria-expanded={dropdownOpen}
       >
         <h2 className="text-[#ACACAC] font-medium"> {filterList} </h2>
-        <MdOutlineKeyboardArrowDown className="text-[20px] ml-2" />
+        <MdOutlineKeyboardArrowDown className="text-[20px]" />
       </button>
 
       <Transition
