@@ -75,7 +75,7 @@ const PieChart = () => {
             </li>
           </ul>
         </div>
-        <div className='max-w-[200px] ml-8 lg:py-0 py-3'>
+        <div className='max-w-[200px] lg:py-0 py-3'>
           <Pie
             data={data}
             className='w-auto h-auto'
