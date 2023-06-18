@@ -24,10 +24,10 @@ const EditData = () => {
                 </div>
                 <div className='pt-5'>
                     <label className='X text-[#606060] text-[14px]'>Description</label>
-                    <textarea placeholder='description' className='border mt-2 w-full placeholder:text-[14px] py-2 text-[#ACACAC] focus:outline-none px-2 rounded-md  ' rows={5}></textarea>
+                    <textarea placeholder='description' className=' resize-none border mt-2 w-full placeholder:text-[14px] py-2 text-[#ACACAC] focus:outline-none px-2 rounded-md  ' rows={3}></textarea>
                 </div>
                 <div className='flex justify-end pt-5'>
-                    <button className='bg-[#FF8C00] text-white h-[40px] px-8 rounded-md'>Edit</button>
+                    <button className='bg-[#FF8C00] text-white h-[40px] px-8 w-[120px] rounded-md'>Edit</button>
                 </div>
 
             </div>

@@ -8,7 +8,7 @@ const Promo = () => {
                     <h2 className='text-[#FF8C00] font-semibold text-[20px]'>Promo Code</h2>
                     <p className='pt-4 text-[#898989] text-[14px]'>Here you can Create and edit promo code</p>
                 </div>
-                <button className='bg-[#FF8C00] text-white h-[40px] lg:px-5 md:px-5 px-5 py-3 text-[14px] leading-[16px] font-semibold rounded-md'>Invite a Friend</button>
+                <button className='bg-[#FF8C00] text-white w-[160px] min-w-max h-[40px] text-[14px] leading-[16px] font-semibold rounded-md'>Invite a Friend</button>
             </div>
 
             <div className='pt-5'>
@@ -32,7 +32,7 @@ const Promo = () => {
                     </div>
                 </div>
                 <div className='pt-10'>
-                    <textarea placeholder='description' className='border border-[#CDD2E1] w-full placeholder:text-[14px] text-[14px] py-2 text-[#ACACAC] focus:outline-none px-2 rounded-md  ' rows={5}></textarea>
+                    <textarea placeholder='description' className=' resize-none border border-[#CDD2E1] w-full placeholder:text-[14px] text-[14px] py-2 text-[#ACACAC] focus:outline-none px-2 rounded-md  ' rows={5}></textarea>
                 </div>
                 <div className='flex justify-end pt-5'>
                     <button className='bg-[#FF8C00] text-white h-[40px] px-[46px] text-[14px] font-semibold rounded-md'>Create</button>
