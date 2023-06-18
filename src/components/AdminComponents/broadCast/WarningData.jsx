@@ -9,7 +9,7 @@ const WarningData = ({setShow}) => {
                 </div>
                 <div className='py-5'>
                         <h1 className='text-[#292929] text-[20px] font-semibold'>Do you want to this Bradcast</h1>
-                        <p className='text-[#666666] leading-[20px] text-[16px]'>Are you sure you want to delete this broadcast</p>
+                        <p className='text-[#666666] leading-[20px] text-[16px] mt-2 '>Are you sure you want to send this message to all reprecients</p>
                     <div className='pt-5'>
                         <button onClick={() => setShow(false)} className='w-[138px] py-2 rounded-md bg-transparent border-[#ACACAC] border text-[#ACACAC]'>Cancel</button>
                         <button className='w-[138px] py-2 ml-3 rounded-md bg-[#FF8C00] text-white'>Send</button>
