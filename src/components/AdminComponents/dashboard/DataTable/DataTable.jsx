@@ -16,7 +16,7 @@ const DataTable = ({ setDetail, setRentalUser }) => {
             <MdSearch className="text-[25px] text-[#FF8C00]" />
             <input
               type="text"
-              className="focus:outline-none mx-2 w-full font-medium placeholder:text-[#ACACAC] placeholder:text-[16px]"
+              className="focus:outline-none mx-2 w-full sm:w-[300px] font-medium placeholder:text-[#ACACAC] placeholder:text-[16px] "
               placeholder="Search..."
             />
           </div>
