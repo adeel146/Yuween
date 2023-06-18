@@ -72,7 +72,7 @@ const WalletIncome = () => {
     return (
 
         <>
-            <div className='h-auto '>
+            <div className='h-auto w-full '>
                 <Line className='w-full' options={options} data={data} redraw={true} />
             </div>
         </>

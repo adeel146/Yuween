@@ -73,7 +73,7 @@ const WalletChart = () => {
 
         <>
             <div className='h-auto '>
-                <Line options={options} className='xl:w-full xl:max-w-max md:!w-[624px] xxtra-small:w-auto xtra-small:!w-[480px] tablet:!w-[550px] !w-[260px] 2xl:!w-[700px] 2xl:sidebar-expanded:!w-[550px] sidebar-expanded:!w-[480px]' data={data} redraw={true} />
+                <Line options={options} className='w-full' data={data} redraw={true} />
             </div>
         </>
     )

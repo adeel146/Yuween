@@ -11,7 +11,7 @@ const GlobelReports = () => {
         <>
             <>
                 <div className='grid lg:grid-cols-2 md:grid-cols-2 xxtra-small:grid-cols-1 xtra-small:grid-cols-1  gap-6 pt-[19px]'>
-                    <div className='bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] w-full  h-auto  rounded-md p-5 xtra-sm:px-0  m-auto xtra-sm:m-0 xtra-sm:w-full xxtra:max-w-full xxtra-sm:m-0 xxtra-sm:w-full lg:max-w-full lg:m-0'>
+                    <div className='bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] w-full  h-auto  rounded-md p-5 '>
                         <div className='flex justify-between items-center'>
                             <h2 className='text-[#FF8C00] leading-[20.16px] text-[20px] font-semibold'>
                                 {
@@ -29,7 +29,7 @@ const GlobelReports = () => {
                             <PieChart />
                         }
                     </div>
-                    <div className='bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] w-full h-auto rounded-md p-5 xxstra-sm:px-0 xstra-sm:px-0 m-auto xxstra-sm:m-0 xstra-sm:m-0  lg:max-w-full lg:m-0 '>
+                    <div className='bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] w-full h-auto rounded-md p-5  '>
                         <h1 className='text-[#FF8C00] text-[20px] font-semibold pb-2'>
 
                             {
