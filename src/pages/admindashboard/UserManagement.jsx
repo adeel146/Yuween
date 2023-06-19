@@ -41,7 +41,7 @@ const UserManagement = () => {
                 <SingleLineChart />
               </div>
             ) : (
-              <div className="bg-white lg:max-w-full lg:m-0 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] rounded-md h-full p-5 col-span-6">
+              <div className="bg-white  lg:m-0 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] h-[250px] pb-[60px] rounded-md p-5 col-span-6">
                 <MultiLineChart />
               </div>
             )}

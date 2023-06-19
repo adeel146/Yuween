@@ -97,6 +97,8 @@ const DashboardChart = () => {
     labels: location === "/dashboard" ? label2 : label,
     datasets: [
       {
+        borderWidth: 1,
+        pointRadius: 0,
         fill: true,
         data: location === "/dashboard" ? valdashboard : valuser,
         borderColor: "#FF8C00",
