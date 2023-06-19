@@ -505,12 +505,14 @@ const DataList = ({ setDetail, setRentalUser }) => {
           <div className="flex lg:flex-nowrap md:flex-nowrap flex-wrap justify-between items-center pt-6 ">
             <div className="flex items-center w-full">
               <h2 className="text-[#333333] text-[14px]">Show</h2>
-              <select className="border border-[#E0E7ED] bg-white focus:outline-none rounded-md p-2 mx-3">
-                <option value="6">6</option>
-                <option value="12">12</option>
-                <option value="25">25</option>
-                <option value="30">30</option>
-              </select>
+              <div className="select-wrapper px-4 mx-2 ">
+                <select className="  focus:outline-none  p-1 ">
+                  <option value="6">6</option>
+                  <option value="12">12</option>
+                  <option value="25">25</option>
+                  <option value="30">30</option>
+                </select>
+              </div>
               <h2 className="text-[#333333] text-[14px]">entries of 430 </h2>
             </div>
             <div className="px-8 xxtra-small:px-0 mt-6 mb-2 w-full flex justify-end">

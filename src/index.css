@@ -24,6 +24,24 @@
 
 }
 
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select-wrapper {
+  position: relative;
+  border-radius: 5px  ;
+  border: 1px solid #E0E7ED;
+}
+
+.select-wrapper::after {
+  content: url('/src/assests/svg/downarroe.svg');
+  font-size: 5px;
+  top: 45%;
+  position: absolute;
+}
+
 /* Chrome, Edge, and Safari */
 .search_scroll::-webkit-scrollbar {
   width: 7.91px;

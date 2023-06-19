@@ -4,6 +4,7 @@ import DataTable from "../../components/AdminComponents/dashboard/DataTable/Data
 import DashboardChart from "../../components/AdminComponents/dashboard/SingleLineChart";
 import { GetDashStatis } from "../../lib/Api/Vehical";
 import RentalIndex from "../../components/AdminComponents/manageUser/vihicalRenterSteps/RentalIndex";
+import CommonDropdown from "../../components/AdminComponents/commonDropdown";
 const Dashboard = () => {
   const [Static, setStatic] = useState({});
   const [detail, setDetail] = useState(false);
@@ -32,9 +33,7 @@ const Dashboard = () => {
                 <h2 className="text-[#444444] leading-[20.16px] text-[14.4px] font-medium">
                   Earnings
                 </h2>
-                <select className="border border-[#E0E0E0] px-3 shadow-none py-[5px] leading-[15.84px] text-[10px] rounded-full bg-white focus:outline-none">
-                  <option>January</option>
-                </select>
+                <CommonDropdown />
               </div>
               <DashboardChart />
             </div>
