@@ -18,6 +18,9 @@ import {
 import { Truncate } from "../../../../util/TrucateString";
 import LoaderSpinner from "../../../../util/LoaderSpinner";
 import EditData from "../../manageUser/EditData";
+import EyeIcon from "../../../../assests/EyeIcon";
+import RefreshIcon from "../../../../assests/RefreshIcon";
+import TrashIcon from "../../../../assests/TrashIcon";
 const DataList = ({ setDetail, setRentalUser }) => {
   const [show, setShow] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -212,7 +215,12 @@ const DataList = ({ setDetail, setRentalUser }) => {
                     </th>
                     <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
                       <div className="font-[600] text-[14px] text-left">
-                        Greater Abidjan{" "}
+                        Grand Abidjan
+                      </div>
+                    </th>
+                    <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
+                      <div className="font-[600] text-[14px] text-left">
+                        Hors Abidjan
                       </div>
                     </th>
                     <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
@@ -374,6 +382,11 @@ const DataList = ({ setDetail, setRentalUser }) => {
                           </div>
                         </td>
                         <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                          <div className="text-left text-[14px] text-[#898989] px-1">
+                            With
+                          </div>
+                        </td>
+                        <td className="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                           <div
                             style={{
                               color: `${item?.status_object?.text_color}`,
@@ -405,13 +418,13 @@ const DataList = ({ setDetail, setRentalUser }) => {
                                   }}
                                   class="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
                                 >
-                                  <BsEye className="text-[15px] text-[#98A2B3]" />
+                                  <EyeIcon className=" text-[#98A2B3]" />
                                   <h2 className="ml-2">View details</h2>
                                 </li>
 
                                 <li class="rounded-sm actions relative px-2 py-2 mb-2 hover:bg-gray-100">
                                   <button class="w-full flex items-center outline-none focus:outline-none">
-                                    <BiRefresh className="text-[14px] ml-auto text-[#98A2B3]" />
+                                    <RefreshIcon className=" ml-auto text-[#98A2B3]" />
                                     <span class="pr-1 flex-1 text-left ml-2">
                                       Change Status
                                     </span>
@@ -461,7 +474,7 @@ const DataList = ({ setDetail, setRentalUser }) => {
                                   onClick={() => handlePopup("", "delete")}
                                   class="rounded-sm flex items-center px-2 py-2 hover:bg-gray-100"
                                 >
-                                  <BsTrash className="text-[15px] text-[#98A2B3]" />
+                                  <TrashIcon className=" text-[#98A2B3]" />
                                   <h2 className="ml-2">Delete</h2>
                                 </li>
                               </ul>

@@ -19,7 +19,7 @@ export const data = {
 const PieChart = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row sm:flex-col justify-between pt-[2rem] ">
+      <div className="flex lg:flex-row md:flex-col justify-center lg:justify-between items-center flex-wrap pt-[2rem] ">
         <div className="flex lg:pt-[4rem] ">
           <ul>
             <li className="justify-between flex items-center">
@@ -50,7 +50,7 @@ const PieChart = () => {
         <div className={`lg:py-0 py-2`}>
           <Pie
             data={data}
-            className="w-auto h-auto"
+            className="!w-[280] h-auto"
             options={{
               responsive: true,
               plugins: {

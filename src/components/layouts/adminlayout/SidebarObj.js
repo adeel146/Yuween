@@ -80,7 +80,7 @@ const SidebarObj = () => {
           },
 
           {
-            label: 'Golobal Reporting',
+            label: 'Global Reporting',
             leftIcon:<img src={icon4} alt="icon" className='object-cover  ' />,
             activeLeftIcon: (
               <img src={icon4} alt="icon" className='object-cover  ' />

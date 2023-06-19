@@ -161,7 +161,7 @@ const TransactionList = ({ title }) => {
                       <tr className=" cursor-pointer  ">
                         <td className="px-4 pr-[25px] py-3 whitespace-nowrap">
                           <div className="text-left text-[14px] text-[#898989]">
-                            Abidjan
+                            01
                           </div>
                         </td>
                         <td className="px-4 pr-[25px] flex items-center py-3 whitespace-nowrap">

@@ -124,7 +124,7 @@ const DashboardChart = () => {
 
       <div className="flex items-center xl:w-full  ">
         <h1 className="[writing-mode:vertical-rl] rotate-180 text-[12px] text-[#98A2B3]">
-          Request
+          FCFA
         </h1>
         <Line
           className=" w-full lg:!h-[240px] xl:!h-[210px] md:!h-[260px] pr-7 sidebar-expanded:!h-[210px]"
