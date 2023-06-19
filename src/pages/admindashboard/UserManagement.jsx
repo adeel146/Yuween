@@ -46,7 +46,7 @@ const UserManagement = () => {
               </div>
             )}
             <div className="gap-5 col-span-6 lg:col-span-4 flex  ">
-              <div className=" w-[50%] shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] bg-white rounded-md p-4">
+              <div className=" w-[40%] shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] bg-white rounded-md p-4">
                 <div className="border-l-4 px-3 h-[80px] ">
                   <h1 className="text-[#98A2B3] text-[14px]">Today request</h1>
                   {Static?.recevied_request ? (
@@ -72,7 +72,7 @@ const UserManagement = () => {
                 </div>
               </div>
 
-              <div className="bg-[#FFEFDC] rounded-md lg:h-[250px] h-full py-2 px-4 w-[50%] ">
+              <div className="bg-[#FFEFDC] rounded-md lg:h-[250px] h-full py-2 px-4 w-[60%] ">
                 <h1 className=" text-[14px] leading-[24px]">
                   Total car renter requests
                 </h1>
