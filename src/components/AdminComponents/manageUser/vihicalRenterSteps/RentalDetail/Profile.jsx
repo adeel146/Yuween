@@ -77,7 +77,7 @@ const Profile = ({ isEdit, setIsEdit, rentalUser }) => {
 
     return (
         <>
-            <div className='bg-white rounded-md shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] lg:h-[260px] xl:sidebar-expanded:h-auto w-full border-0 p-5'>
+            <div className='bg-white rounded-md shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] lg:h-auto xl:sidebar-expanded:h-auto w-full border-0 p-5'>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className='flex xl:flex-nowrap 2xl:justify-between w-full flex-wrap'>
                         <div className='flex justify-between 2xl:w-[20%] xl:w-auto w-full '>
@@ -95,7 +95,7 @@ const Profile = ({ isEdit, setIsEdit, rentalUser }) => {
                                 </div>
                                 <h2 className='text-center mt-3 text-[16px]'>Renter</h2>
                             </div>
-                            <div className=' lg:hidden pt-5 pl-2'>
+                            <div className=' xl:hidden pt-5 pl-2'>
                                 {isEdit === false ?
                                     <>
                                         <div onClick={() => handleEdit()} className=' cursor-pointer flex items-center text-[#ACACAC] border-[#ACACAC] justify-center w-[138px] py-2 border rounded-md bg-transparent '>
