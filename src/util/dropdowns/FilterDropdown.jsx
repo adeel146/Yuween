@@ -1,50 +1,51 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import Transition from '../Transition/Transition';
-import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
-import { GetVihicalsByFilter } from '../../lib/Api/Vehical';
+import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Transition from "../Transition/Transition";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { GetVihicalsByFilter } from "../../lib/Api/Vehical";
 
-function FilterDropdown({ setVehicalList, setLoading , setTypes}) {
-
+function FilterDropdown({ setVehicalList, setLoading, setTypes, list }) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [filterList, setFilterList] = useState("Filter");
+  const [List, setList] = useState(
+    list || ["all", "incomplete", "pending", "approved", "rejected", "inactive"]
+  );
 
   const trigger = useRef(null);
   const dropdown = useRef(null);
 
-  const filter = ["all", "incomplete", "pending", "approved", "rejected", "inactive"]
-
-
   const GetFilterVehical = async (item) => {
     if (item === "all") {
-      setFilterList(item)
-      setTypes(true)
+      setFilterList(item);
+      setTypes(true);
       setTimeout(() => {
-        setTypes(false)
+        setTypes(false);
       }, 1000);
-
+    } else {
+      setFilterList(item);
+      setLoading(true);
+      let { res } = await GetVihicalsByFilter(item);
+      let vehicals = Object.assign({}, ...res);
+      setLoading(false);
+      setVehicalList(vehicals?.vehicles);
+      setDropdownOpen(false);
     }
-    else {
-      setFilterList(item)
-      setLoading(true)
-      let { res } = await GetVihicalsByFilter(item)
-      let vehicals = Object.assign({}, ...res)
-      setLoading(false)
-      setVehicalList(vehicals?.vehicles)
-      setDropdownOpen(false)
-    }
-
-  }
+  };
 
   // close on click outside
   useEffect(() => {
     const clickHandler = ({ target }) => {
       if (!dropdown.current) return;
-      if (!dropdownOpen || dropdown.current.contains(target) || trigger.current.contains(target)) return;
+      if (
+        !dropdownOpen ||
+        dropdown.current.contains(target) ||
+        trigger.current.contains(target)
+      )
+        return;
       setDropdownOpen(false);
     };
-    document.addEventListener('click', clickHandler);
-    return () => document.removeEventListener('click', clickHandler);
+    document.addEventListener("click", clickHandler);
+    return () => document.removeEventListener("click", clickHandler);
   });
 
   // close if the esc key is pressed
@@ -53,21 +54,23 @@ function FilterDropdown({ setVehicalList, setLoading , setTypes}) {
       if (!dropdownOpen || keyCode !== 27) return;
       setDropdownOpen(false);
     };
-    document.addEventListener('keydown', keyHandler);
-    return () => document.removeEventListener('keydown', keyHandler);
+    document.addEventListener("keydown", keyHandler);
+    return () => document.removeEventListener("keydown", keyHandler);
   });
 
   return (
     <div className="relative inline-flex xtra-small:w-full xxtra-small:w-full">
       <button
         ref={trigger}
-        className={` flex items-center w-full px-5 py-[10px] justify-between bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] transition duration-150 rounded-full ${dropdownOpen && 'bg-slate-200'} ml-4 xxtra-small:ml-0 xtra-small:ml-0`}
+        className={` flex items-center w-full px-5 py-[10px] justify-between bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] transition duration-150 rounded-full ${
+          dropdownOpen && "bg-slate-200"
+        } ml-4 xxtra-small:ml-0 xtra-small:ml-0`}
         aria-haspopup="true"
         onClick={() => setDropdownOpen(!dropdownOpen)}
         aria-expanded={dropdownOpen}
       >
-        <h2 className='font-medium text-[#444]'> {filterList} </h2>
-        <MdOutlineKeyboardArrowDown className='text-[20px] ml-2' />
+        <h2 className="font-medium text-[#444]"> {filterList} </h2>
+        <MdOutlineKeyboardArrowDown className="text-[20px] ml-2" />
       </button>
 
       <Transition
@@ -86,26 +89,22 @@ function FilterDropdown({ setVehicalList, setLoading , setTypes}) {
           onBlur={() => setDropdownOpen(false)}
         >
           <ul>
-            {
-              filter.map((item, i) => (
-                <li key={i} className={`hover:bg-gray-200 hover:text-white`}>
-                  <Link
-                    className="text-[#444444] text-[14px] font-medium  flex items-center py-1 px-3"
-                    to="#0"
-                    onClick={() => GetFilterVehical(item)}
-                  >
-                    <span>{item}</span>
-                  </Link>
-                </li>
-
-              ))
-            }
-
+            {List.map((item, i) => (
+              <li key={i} className={`hover:bg-gray-200 hover:text-white`}>
+                <Link
+                  className="text-[#444444] text-[14px] font-medium  flex items-center py-1 px-3"
+                  to="#0"
+                  onClick={() => GetFilterVehical(item)}
+                >
+                  <span>{item}</span>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </Transition>
     </div>
-  )
+  );
 }
 
 export default FilterDropdown;

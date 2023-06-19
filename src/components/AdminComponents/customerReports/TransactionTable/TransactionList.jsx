@@ -28,10 +28,10 @@ const TransactionList = () => {
                                 <thead className="text-xs font-[500]  bg-[#FFF8EF] border-0">
                                     <tr className='text-[#626973]'>
 
-                                        <th className="px-4 py-4 pr-[25px] whitespace-nowrap w-px">
+                                        <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
                                             <div className="font-[500]  text-[14px] text-left">ID </div>
                                         </th>
-                                        <th className="px-4 py-4 pr-[25px] whitespace-nowrap w-px">
+                                        <th className="px-4 py-4 pr-[25px] whitespace-nowrap">
                                             <div className="font-[500]  text-[14px] text-left">Renter </div>
                                         </th>
                                         <th className="px-4 py-4 pr-[25px] whitespace-nowrap">

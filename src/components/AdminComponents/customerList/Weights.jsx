@@ -6,7 +6,7 @@ import cus4 from '../../../assests/cus4.svg'
 const Weights = () => {
     return (
         <>
-            <div className='grid lg:grid-cols-2 xtra-small:grid-cols-2 md:grid-cols-2 gap-5'>
+            <div className='grid lg:grid-cols-2 xtra-small:grid-cols-2  gap-5'>
                 <div className='shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)]  rounded-md   p-5'>
                     <div className='flex justify-between  '>
                         <h2 className='text-[#444444] text-[14px] leading-[24px] max-w-[150px] tablet-lg:max-w-[200px] '>Total Requested Rents</h2>
@@ -31,7 +31,7 @@ const Weights = () => {
                 </div>
             </div>
 
-            <div className='grid lg:grid-cols-2 xtra-small:grid-cols-2 md:grid-cols-2 gap-5 mt-5'>
+            <div className='grid lg:grid-cols-2 xtra-small:grid-cols-2  gap-5 mt-5'>
                 <div className='shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)]  rounded-md   p-5'>
                     <div className='flex justify-between  '>
                         <h2 className='text-[#444444] text-[14px] leading-[24px] max-w-[150px] tablet-lg:max-w-[200px]'>Total Cancelled Rents</h2>
