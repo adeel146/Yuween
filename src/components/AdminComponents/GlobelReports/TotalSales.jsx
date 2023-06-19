@@ -67,6 +67,8 @@ export const data = {
       data: [250, 230, 250, 300, 240, 241, 245, 246, 247, 249, 250, 255, 260],
       borderColor: "#FF8C00",
       backgroundColor: "rgba(247, 246, 247, 0.5)",
+      borderWidth: 1,
+      pointRadius: 0,
     },
     {
       fill: true,
@@ -74,6 +76,8 @@ export const data = {
       data: [200, 180, 200, 180, 200, 80, 85, 86, 87, 245, 246, 247, 249],
       borderColor: "#FFC278",
       backgroundColor: "rgba(247, 241, 236, 0.5)",
+      borderWidth: 1,
+      pointRadius: 0,
     },
   ],
 };
