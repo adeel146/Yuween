@@ -192,16 +192,19 @@ const PromoTable = () => {
         <div className="flex flex-wrap justify-between items-center pt-6 px-7">
           <div className="flex items-center">
             <h2 className="text-[#333333] text-[12px]">Show</h2>
-            <select
-              value={itemperPage}
-              onChange={(e) => setItemPerPage(e.target.value)}
-              className="border focus:outline-none rounded-md px-3 py-2.5 mx-3 text-[12px]"
-            >
-              <option value="6">6</option>
-              <option value="12">12</option>
-              <option value="25">25</option>
-              <option value="30">30</option>
-            </select>
+
+            <div className="select-wrapper px-4 mx-2 ">
+              <select
+                value={itemperPage}
+                onChange={(e) => setItemPerPage(e.target.value)}
+                className="  focus:outline-none  p-1 "
+              >
+                <option value="6">6</option>
+                <option value="12">12</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+              </select>
+            </div>
             <h2 className="text-[#333333] text-[12px]">
               entries of {items?.length}
             </h2>

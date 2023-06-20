@@ -23,7 +23,7 @@ const DataTable = ({ setIsEdit, title }) => {
         </div>
       </div>
       <div>
-        <DataList setDetail={setIsEdit} />
+        <DataList setDetail={setIsEdit} title={title} />
       </div>
     </>
   );

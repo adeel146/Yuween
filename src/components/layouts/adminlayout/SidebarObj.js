@@ -179,7 +179,7 @@ const SidebarObj = () => {
                 subMenuItems: [],
               },
               {
-                label: 'Reports',
+                label: 'Report',
                 path: '/report',
                 subMenuItems: [],
               },
