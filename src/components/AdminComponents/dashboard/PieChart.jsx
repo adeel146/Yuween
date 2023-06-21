@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
 
@@ -19,8 +19,8 @@ export const data = {
 const PieChart = () => {
   return (
     <>
-      <div className="flex lg:flex-row md:flex-col justify-center lg:justify-between items-center flex-wrap pt-[2rem] ">
-        <div className="flex lg:pt-[4rem] ">
+      <div className="flex lg:flex-row md:flex-col justify-center xl:justify-between items-center flex-wrap pt-[2rem] ">
+        <div className="flex lg:pt-[4rem] xl:pt-0 ">
           <ul>
             <li className="justify-between flex items-center">
               <div className="flex items-center ">

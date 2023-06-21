@@ -37,11 +37,11 @@ const Messages = ({ type }) => {
                 </button>
                   <ul
                     class={`bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] p-2 rounded-md transform scale-0 group-hover:scale-100 absolute 
-                    transition duration-150 ease-in-out top-full w-[150px] -right-12  `}
+                    transition duration-150 ease-in-out top-full w-[150px] right-0  `}
                   >
                     <li class="rounded-sm cursor-pointer actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100">
                       <img src={ffile} alt="file_img" className='object-cover' />
-                      <h2 className='ml-2 text-[14px]' >View details</h2>
+                      <h2 className='ml-2 text-[14px]' >Media</h2>
                     </li>
 
                     <li class="rounded-sm cursor-pointer flex items-center px-2 py-2 hover:bg-gray-100">

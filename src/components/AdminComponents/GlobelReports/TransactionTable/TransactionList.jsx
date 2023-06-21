@@ -6,6 +6,7 @@ import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
+import { useLocation } from "react-router-dom";
 // import { BiRefresh } from 'react-icons/bi';
 const TransactionList = ({ title }) => {
   const items = [
@@ -23,6 +24,8 @@ const TransactionList = ({ title }) => {
     const newOffset = (event.selected * itemperPage) % items.length;
     setItemOffset(newOffset);
   };
+
+  const location = useLocation().pathname;
 
   return (
     <>
