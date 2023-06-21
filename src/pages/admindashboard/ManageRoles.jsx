@@ -15,7 +15,7 @@ const ManageRoles = () => {
             Roles List{" "}
           </h2>
           <div className="flex lg:py-0 py-2 ">
-            <div className="bg-white rounded-full border-0 flex items-center px-4 h-[45px] w-[380px] py-3 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)]">
+            <div className="bg-white rounded-full border-0 flex items-center px-4 h-[45px] sm:w-[380px] w-[320px] py-3 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)]">
               <MdSearch className="text-[25px] text-[#FF8C00]" />
               <input
                 type="text"

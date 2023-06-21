@@ -122,7 +122,7 @@ const Drivinglicence = ({ isEdit }) => {
                 <div className="select-wrapper px-4 xxtra-small:mt-2 mt-3 xxtra-small:text-[12px] text-[16px]">
                   <select className="  focus:outline-none  p-1 ">
                     <option>Select Status</option>
-                    <option>
+                    <option className="!p-2" >
                       <p className="text-[16px] text-[#2BA676] bg-[#E0F3EC] rounded-full px-2.5 py-1 leading-[22px] xxtra-small:mt-3 xxtra-small:text-[12px] xxtra-small:leading-[16px]">
                         Valid
                       </p>
