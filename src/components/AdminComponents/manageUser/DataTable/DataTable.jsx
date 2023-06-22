@@ -27,7 +27,9 @@ const DataTable = ({ setDetail, setRentalUser }) => {
     <>
       <div className="flex lg:flex-nowarp  flex-wrap justify-between items-center">
         <h2 className="text-[14.4px] leading-[20.16px] font-semibold text-[#444444]">
-          New Vehicle Deposit Requests
+          {location === "/vehicalOwner"
+            ? "Vehicle Owner's  List"
+            : "Vehicle Renters List"}
         </h2>
 
         <div className="flex tablet:justify-between tablet:w-full lg:py-0 py-2  xtra-small:block xxtra-small:block xtra-small:w-full xxtra-small:w-full">

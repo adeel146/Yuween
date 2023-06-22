@@ -95,7 +95,9 @@ const TransactionList = ({ title }) => {
                       </th>
                       <th className="px-4 py-4 pr-[25px] whitespace-nowrap w-px">
                         <div className="font-[500] text-[14px] text-left">
-                          Total Accepted Requests{" "}
+                          {location === "/globelRenter"
+                            ? " Total Rented Vehicles"
+                            : "Total Accepted requests"}{" "}
                         </div>
                       </th>
                       <th className="px-4 py-4 pr-[25px] whitespace-nowrap w-px">
@@ -208,18 +210,24 @@ const TransactionList = ({ title }) => {
           }
         </div>
         {title === "Transaction" && (
-          <div className="flex flex-wrap justify-between items-center pt-6 px-5">
-            {/* <div className='flex items-center'>
-                            <h2 className='text-[#333333] text-[14px]'>Show</h2>
-                            <select value={itemperPage} onChange={(e) => setItemPerPage(e.target.value)} className='border focus:outline-none rounded-md px-5 py-2 mx-3'>
-                                <option value="6">6</option>
-                                <option value="12">12</option>
-                                <option value="25">25</option>
-                                <option value="30">30</option>
-                            </select>
-                            <h2 className='text-[#333333] text-[14px]'>entries of {items?.length}</h2>
-                        </div> */}
-            <div className="lg:px-8 my-6 ">
+          <div className="flex flex-wrap justify-between items-center pt-6 md:px-8 px-5">
+            <div className="flex items-center">
+              <h2 className="text-[#333333] text-[12px]">Show</h2>
+              <select
+                value={itemperPage}
+                onChange={(e) => setItemPerPage(e.target.value)}
+                className="border focus:outline-none rounded-md px-3 py-2 mx-2 text-[12px] text-[#333333]"
+              >
+                <option value="6">6</option>
+                <option value="12">12</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+              </select>
+              <h2 className="text-[#333333] text-[12px]">
+                entries of {items?.length}
+              </h2>
+            </div>
+            <div className="lg:px-8  my-6 ">
               <ReactPaginate
                 breakLabel="..."
                 breakClassName=" bg-[#F3F3F3]"
