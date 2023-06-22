@@ -50,7 +50,7 @@ const SidebarObj = () => {
                 subMenuItems: [],
               },
               {
-                label: 'Vehical Owner',
+                label: 'Vehical Owners',
                 path: '/vehicalOwner',
                 subMenuItems: [],
               },
@@ -95,7 +95,7 @@ const SidebarObj = () => {
                 subMenuItems: [],
               },
               {
-                label: 'Car Owner',
+                label: 'Car Owners',
                 path: '/globelOwner',
                 subMenuItems: [],
               },
