@@ -5,6 +5,7 @@ import FilterDropdown from "../../../../util/dropdowns/FilterDropdown";
 import { useLocation } from "react-router-dom";
 import SearchBar from "../../../GenericComponents/SearchBar";
 import { GetVihicals } from "../../../../lib/Api/Vehical";
+import { MdSearch } from "react-icons/md";
 const DataTable = ({ setDetail, setRentalUser }) => {
   const [vehicalData, setVehicalData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -28,25 +29,27 @@ const DataTable = ({ setDetail, setRentalUser }) => {
         <h2 className="text-[14.4px] leading-[20.16px] font-semibold text-[#444444]">
           New Vehicle Deposit Requests
         </h2>
-        <div className="flex lg:flex-nowrap xxtra-small:w-full xtra-small:w-full xtra-small:flex-nowrap md:flex-nowrap flex-wrap lg:my-0 my-3">
-          <SearchBar
-            setVehicalList={(val) => setVehicalList(val)}
-            setLoading={setLoading}
-          />
-          {
-            // location === "/vehicalOwner" &&
-            <div className="lg:ml-4 md:ml-4 ml-[5rem] lg:my-0 md:my-0 my-2">
-              <div className="text-center w-full flex justify-end">
-                <div className="dropdown relative ">
-                  <FilterDropdown
-                    setVehicalList={(val) => setVehicalList(val)}
-                    setTypes={setTypes}
-                    setLoading={setLoading}
-                  />
-                </div>
+
+        <div className="flex tablet:justify-between tablet:w-full lg:py-0 py-2  xtra-small:block xxtra-small:block xtra-small:w-full xxtra-small:w-full">
+          <div className="bg-white xtra-small:w-full flex border-0 lg:flex items-center px-4 h-[45px] w-[380px] xxtra-small:w-full xtra-sm:w-full py-3 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] rounded-full">
+            <MdSearch className="text-[25px] text-[#FF8C00]" />
+            <input
+              type="text"
+              className="focus:outline-none mx-2 w-full placeholder:text-[#ACACAC] placeholder:text-[16px]"
+              placeholder="Search..."
+            />
+          </div>
+          <div className="ml-4 xtra-small:ml-0 xxtra-small:ml-0 xxtra-small:mt-2 xtra-small:mt-2">
+            <div className="text-center w-full flex justify-end xtra-small:justify-start xxtra-small:justify-start ">
+              <div className="dropdown xxtra-small:w-full xtra-small:w-full relative">
+                <FilterDropdown
+                  setVehicalList={(val) => setVehicalList(val)}
+                  setTypes={setTypes}
+                  setLoading={setLoading}
+                />
               </div>
             </div>
-          }
+          </div>
         </div>
       </div>
       <div>

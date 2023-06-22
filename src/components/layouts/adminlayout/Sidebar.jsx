@@ -107,7 +107,7 @@ function Sidebar({
                 {/* <h3 className="text-xs uppercase text-[white] font-semibold pl-3">
                   <span className="lg:hidden lg:sidebar-expanded:block 2xl:block">{group.groupname}</span>
                 </h3> */}
-                <ul className=" lg:max-h-[550px] overflow-x-hidden md:h-full h-full 2xl:max-h-full  admin_sidrbar_scroll px-2 overflow-auto pb-4">
+                <ul className=" lg:max-h-[550px] !h-[90vh] overflow-x-hidden md:h-full  2xl:max-h-full  admin_sidrbar_scroll px-2 overflow-auto pb-4">
                   {group.menuitems?.map((item, index) => {
                     if (item.subMenuItems.length === 0) {
                       return (

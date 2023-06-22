@@ -206,19 +206,19 @@ const CustomerReportList = ({ setDetail }) => {
                                 <BsThreeDotsVertical className="text-[20px] text-[#898989]" />
                               </button>
                               <ul
-                                class="bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] border-0 rounded-md transform scale-0 group-hover:scale-100 absolute 
-  transition duration-150 ease-in-out right-7 origin-top w-[15%]  "
+                                class="bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] border-0 rounded-md p-4 transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out right-7 origin-top lg:w-[15%]  "
                               >
                                 <li
                                   onClick={() => setDetail(true)}
                                   class="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
                                 >
-                                  <EyeIcon className="text-[15px] text-[#98A2B3]" />
+                                  <EyeIcon className=" text-[#98A2B3]" />
                                   <h2 className="ml-2">View details</h2>
                                 </li>
 
                                 <li class="rounded-sm actions relative px-2 py-2 mb-2 hover:bg-gray-100">
-                                  <button class="w-full  flex items-center outline-none focus:outline-none">
+                                  <button class="w-full flex items-center outline-none focus:outline-none">
                                     <RefreshIcon className=" ml-auto text-[#98A2B3]" />
                                     <span class="pr-1 flex-1 text-left ml-2">
                                       Change Status
@@ -235,14 +235,14 @@ const CustomerReportList = ({ setDetail }) => {
                                     </span>
                                   </button>
                                   <ul
-                                    class="bg-white border-0 p-2 flex justify-center flex-col items-center rounded-md absolute top-0 right-10 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)]
+                                    class="bg-white border-0 p-2 flex justify-center flex-col items-start rounded-md absolute top-0 right-10 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)]
   transition duration-150 ease-in-out origin-top-left
   min-w-32
   "
                                   >
                                     {status.map((st, i) => (
                                       <li
-                                        className="px-2 py-2 text-left mb-2"
+                                        class="px-2 py-2 text-left mb-2"
                                         key={i}
                                       >
                                         <div
@@ -250,7 +250,7 @@ const CustomerReportList = ({ setDetail }) => {
                                             color: `${st.color}`,
                                             backgroundColor: `${st.bgColor}`,
                                           }}
-                                          className={`text-center py-[3px] px-2.5 w-auto text-[12px] rounded-full`}
+                                          className={`text-center py-[3px] px-2.5 w-auto text-[12px] font-medium rounded-full`}
                                         >
                                           {st.Title}
                                         </div>
@@ -320,25 +320,24 @@ const CustomerReportList = ({ setDetail }) => {
                           <div className="text-center flex justify-center  px-1">
                             {/* <BsThreeDotsVertical className='text-[20px] text-[#898989]' /> */}
                             {/* <GenericDrodown /> */}
-
                             <div class="group inline-block">
                               <button class="outline-none focus:outline-none  px-3 py-1 bg-white rounded-sm flex items-center">
                                 <BsThreeDotsVertical className="text-[20px] text-[#898989]" />
                               </button>
                               <ul
-                                class="bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] border-0 rounded-md transform scale-0 group-hover:scale-100 absolute 
-  transition duration-150 ease-in-out right-7 origin-top w-[15%]  "
+                                class="bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] border-0 rounded-md p-4 transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out right-7 origin-top lg:w-[15%]  "
                               >
                                 <li
                                   onClick={() => setDetail(true)}
                                   class="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
                                 >
-                                  <EyeIcon className="text-[15px] text-[#98A2B3]" />
+                                  <EyeIcon className=" text-[#98A2B3]" />
                                   <h2 className="ml-2">View details</h2>
                                 </li>
 
                                 <li class="rounded-sm actions relative px-2 py-2 mb-2 hover:bg-gray-100">
-                                  <button class="w-full  flex items-center outline-none focus:outline-none">
+                                  <button class="w-full flex items-center outline-none focus:outline-none">
                                     <RefreshIcon className=" ml-auto text-[#98A2B3]" />
                                     <span class="pr-1 flex-1 text-left ml-2">
                                       Change Status
@@ -355,14 +354,14 @@ const CustomerReportList = ({ setDetail }) => {
                                     </span>
                                   </button>
                                   <ul
-                                    class="bg-white border-0 p-2 flex justify-center flex-col items-center rounded-md absolute top-0 right-10 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)]
+                                    class="bg-white border-0 p-2 flex justify-center flex-col items-start rounded-md absolute top-0 right-10 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)]
   transition duration-150 ease-in-out origin-top-left
   min-w-32
   "
                                   >
                                     {status.map((st, i) => (
                                       <li
-                                        className="px-2 py-2 text-left mb-2"
+                                        class="px-2 py-2 text-left mb-2"
                                         key={i}
                                       >
                                         <div
@@ -370,7 +369,7 @@ const CustomerReportList = ({ setDetail }) => {
                                             color: `${st.color}`,
                                             backgroundColor: `${st.bgColor}`,
                                           }}
-                                          className={`text-center py-[3px] px-2.5 w-auto text-[12px] rounded-full`}
+                                          className={`text-center py-[3px] px-2.5 w-auto text-[12px] font-medium rounded-full`}
                                         >
                                           {st.Title}
                                         </div>
