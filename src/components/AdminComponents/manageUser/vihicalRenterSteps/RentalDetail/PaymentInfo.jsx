@@ -5,6 +5,8 @@ import { useLocation } from 'react-router-dom'
 import PieChart from '../../PieChart'
 const PaymentInfo = () => {
     const location = useLocation().pathname
+
+    const titleArray = ['Sent Requests', 'Approved Requests', 'Ended Requests', 'Expired Requests']
     return (
         <>
 
@@ -22,7 +24,7 @@ const PaymentInfo = () => {
                             Array(4).fill(4).map((_, i) => (
 
                                 <div key={i} className='bg-white border-0 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] rounded-md p-5'>
-                                    <h1 className='text-[18px] leading-[20px] text-[#444444]'>Send Requests</h1>
+                                    <h1 className='text-[18px] leading-[20px] text-[#444444]'>{ titleArray[i]}</h1>
                                     <div className='flex justify-between items-center pt-[34px]'>
                                         <h2 className='text-[42.55px] leading-[39px] text-[#FF8C00] font-semibold'>115</h2>
                                         <img src={car} alt="car_img" className='object-cover' />
@@ -74,13 +76,13 @@ const PaymentInfo = () => {
                                             <tr className='text-[#626973]'>
 
                                                 <th className="px-4 py-3 whitespace-nowrap w-px">
-                                                    <div className="font-medium text-[14px] text-left">Vehicle Owner </div>
-                                                </th>
-                                                <th className="px-4 py-3 whitespace-nowrap">
-                                                    <div className="font-medium text-[14px] text-left">Brand</div>
+                                                    <div className="font-medium text-[14px] text-left">Mobile Money </div>
                                                 </th>
                                                 <th className="px-4 py-3 whitespace-nowrap">
                                                     <div className="font-medium text-[14px] text-left">Date</div>
+                                                </th>
+                                                <th className="px-4 py-3 whitespace-nowrap">
+                                                    <div className="font-medium text-[14px] text-left">Location</div>
                                                 </th>
 
 
@@ -92,13 +94,13 @@ const PaymentInfo = () => {
                                                 Array(3).fill(3).map((_, i) =>
                                                     <tr className=' cursor-pointer  ' key={i}>
                                                         <td className="px-4 py-3 whitespace-nowrap">
-                                                            <div className="text-left text-[14px] text-[#898989]">hell</div>
+                                                            <div className="text-left text-[14px] text-[#898989]">Orange</div>
                                                         </td>
                                                         <td className="px-4 py-3 whitespace-nowrap">
-                                                            <div className="text-left text-[14px] text-[#898989]">Fortuner</div>
+                                                            <div className="text-left text-[14px] text-[#898989]">12 Sept 2023</div>
                                                         </td>
                                                         <td className="px-4 py-3 whitespace-nowrap">
-                                                            <div className="text-left text-[14px] text-[#898989]">02-16-2023</div>
+                                                            <div className="text-left text-[14px] text-[#898989]">Abid Jan</div>
                                                         </td>
 
 

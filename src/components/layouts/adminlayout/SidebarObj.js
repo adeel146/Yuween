@@ -57,7 +57,7 @@ const SidebarObj = () => {
             ],
           },
           {
-            label: 'Customer Reports',
+            label: 'Customer Report',
             leftIcon: <img src={icon3} alt="icon" className='object-cover  ' />,
             activeLeftIcon: (
               <img src={icon3} alt="icon" className='object-cover  ' />
