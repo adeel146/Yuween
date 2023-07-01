@@ -85,8 +85,8 @@ export const data = {
 const WalletChart = () => {
   return (
     <>
-      <div className="h-auto ">
-        <Line options={options} className="w-full" data={data} redraw={true} />
+      <div className="h-full ">
+        <Line options={options} className="w-full !h-[80%] " data={data} redraw={true} />
       </div>
     </>
   );
