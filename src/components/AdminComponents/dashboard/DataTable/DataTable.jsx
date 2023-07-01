@@ -7,7 +7,7 @@ const DataTable = ({ setDetail, setRentalUser }) => {
   return (
     <>
       <div className="flex  flex-wrap justify-between items-center  space-y-2 sm:space-y-0 ">
-        <h2 className="text-[14.4px] leading-[20.16px] font-semibold text-[#444444]">
+        <h2 className="text-[14.4px] mb-2 leading-[20.16px] font-semibold text-[#444444]">
           New Vehicle Deposit Requests
         </h2>
 

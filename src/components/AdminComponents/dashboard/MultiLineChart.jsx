@@ -81,7 +81,7 @@ export const data = {
     {
       fill: true,
       label: "Requests Received",
-      data: [280, 255, 222, 250, 222, 250, 225, 200, 320, 225, 250, 200],
+      data: [280, 255, 222, 250, 222, 250, 225, 200, 290, 225, 250, 200],
       borderColor: "#FF8C00",
       backgroundColor: "rgba(247, 246, 246, 0.5)",
       borderWidth: 1,
@@ -90,7 +90,7 @@ export const data = {
     {
       fill: true,
       label: " Canceled Booking",
-      data: [250, 225, 200, 220, 192, 220, 225, 170, 290, 195, 230, 170],
+      data: [250, 225, 200, 220, 192, 220, 225, 170, 270, 195, 230, 170],
       borderColor: "#876842",
       backgroundColor: "rgba(247, 241, 236, 0.5)",
       borderWidth: 1,
