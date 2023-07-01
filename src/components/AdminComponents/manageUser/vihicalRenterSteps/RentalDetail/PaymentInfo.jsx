@@ -23,7 +23,7 @@ const PaymentInfo = () => {
 
                                 <div key={i} className='bg-white border-0 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] rounded-md p-5'>
                                     <h1 className='text-[18px] leading-[20px] text-[#444444]'>Send Requests</h1>
-                                    <div className='flex justify-between items-center pt-[34px]'>
+                                    <div className='flex flex-wrap  justify-between items-center pt-[34px]'>
                                         <h2 className='text-[42.55px] leading-[39px] text-[#FF8C00] font-semibold'>115</h2>
                                         <img src={car} alt="car_img" className='object-cover' />
                                     </div>

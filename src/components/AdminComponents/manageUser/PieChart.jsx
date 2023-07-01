@@ -21,7 +21,7 @@ const PieChart = () => {
   const location = useLocation().pathname;
   return (
     <>
-      <div className="flex lg:flex-nowrap lg:flex-row md:flex-col justify-center sm:justify-between items-center flex-wrap  ">
+      <div className="flex lg:flex-nowrap lg:flex-col xl:flex-row justify-center   xl:justify-between items-center flex-wrap  ">
         <div className="flex pt-[2rem] ">
           {location === "/customerRenter" ? (
             <ul>

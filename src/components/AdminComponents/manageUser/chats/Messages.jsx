@@ -64,7 +64,7 @@ const Messages = ({ type }) => {
           <div className="flex flex-col h-full overflow-x-auto mb-4">
             <div className="flex flex-col h-full">
               <div className="grid grid-cols-12 gap-y-2 pt-4">
-                <div className="col-start-1 lg:col-end-8 md:col-end-8 col-end-13 p-3 rounded-lg ">
+                <div className="col-start-1  col-end-13 p-3 rounded-lg ">
                   <div className="flex flex-row ">
                     <div
                       className=""
@@ -90,7 +90,7 @@ const Messages = ({ type }) => {
 
                 </div>
 
-                <div className="lg:col-start-6 md:col-start-6 col-start-1 col-end-13 p-3 rounded-lg">
+                <div className=" col-start-1 col-end-13 p-3 rounded-lg">
                   <div className="flex  justify-start flex-row-reverse">
                     <div
                       className=""

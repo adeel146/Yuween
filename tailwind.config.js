@@ -9,6 +9,7 @@ module.exports = {
      
       screens: {
         'tablet-lg': {'min': '768px', 'max': '999px'},
+        'cards-screen': {'min': '768px', 'max': '1150px'},
         'tablet': {'min': '600px', 'max': '767px'},
         'xtra-small': { 'min': '520px', 'max': '599px'},
         'xxtra-small': { 'min': '370px', 'max': '510px'},

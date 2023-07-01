@@ -11,8 +11,8 @@ const DataTable = () => {
     <>
       {detail === false ? (
         <>
-          <div className="flex  lg:flex-nowrap flex-wrap  justify-between items-center">
-            <h2 className="text-[20px] leading-[20.16px] font-semibold text-[#444444]">
+          <div className="flex  xl:flex-nowrap flex-wrap  justify-between items-center">
+            <h2 className="text-[20px] leading-[20.16px] font-semibold text-[#444444] mb-2">
               Gateway Payment Management
             </h2>
             <div className="flex tablet:justify-between tablet:w-full lg:py-0 py-2  xtra-small:block xxtra-small:block xtra-small:w-full xxtra-small:w-full">

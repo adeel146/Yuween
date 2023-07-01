@@ -64,9 +64,12 @@ const Drivinglicence = ({ isEdit }) => {
                         </span>
                       </div>
                     </div>
-                    <h2 className="underline text-[#397DED] text-[12px]">
-                      Preview
-                    </h2>
+                    <div className="flex items-center">
+                      <h2 className="underline text-[#397DED] text-[12px]">
+                        Preview
+                      </h2>
+                      {isEdit && <MdDelete className="text-[#F04438] " />}
+                    </div>
                   </div>
                 </div>
               ))}
@@ -75,7 +78,7 @@ const Drivinglicence = ({ isEdit }) => {
 
         <div className="bg-white border-0 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] rounded-md p-5 mt-5">
           <h1 className="text-[#FF8C00] text-[20px] leading-[30px] font-semibold">
-            Driving License Details
+            ID Details
           </h1>
           <div className="flex justify-between items-center pt-5">
             <div className="">

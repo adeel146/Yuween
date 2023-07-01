@@ -28,7 +28,7 @@ const Dashboard = () => {
             Overview
           </h2>
           <div className="grid lg:grid-cols-10 md:grid-cols-10 xxtra-small:grid-cols-1 xtra-small:grid-cols-1 gap-6 mt-[20px]">
-            <div className="bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] border border-gray-100 rounded-md h-full px-3 pt-3 col-span-6 sm:col-span-4  ">
+            <div className="bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] border border-gray-100 rounded-md h-full px-3 pt-3 col-span-6 md:col-span-4  ">
               <div className="flex justify-between items-center pb-3">
                 <h2 className="text-[#444444] leading-[20.16px] text-[14.4px] font-medium">
                   Earnings

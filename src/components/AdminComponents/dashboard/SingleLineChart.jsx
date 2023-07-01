@@ -26,7 +26,8 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
-  maintainAspectRatio: false,
+  // maintainAspectRatio: true,
+  devicePixelRatio: 4,
   tooltips: {
     enabled: false,
   },
@@ -122,12 +123,12 @@ const DashboardChart = () => {
         </>
       ) : null}
 
-      <div className="flex items-center xl:w-full  ">
+      <div className="flex items-center w-full  ">
         <h1 className="[writing-mode:vertical-rl] rotate-180 text-[12px] text-[#98A2B3]">
           FCFA
         </h1>
         <Line
-          className=" w-full lg:!h-[240px] xl:!h-[210px] md:!h-[260px] pr-7 sidebar-expanded:!h-[210px]"
+          className=" !w-full lg:!h-[240px] xl:!h-[210px] md:!h-[260px] sm:!h-[280px] pr-7 sidebar-expanded:!h-[260px]"
           options={options}
           data={data}
           redraw={true}

@@ -18,8 +18,8 @@ const UsersList = () => {
                         <input type="text" placeholder='Search messages' className='focus:outline-none border border-[#A7AFB2] text-[16px] leading-[18px] rounded-lg px-3 py-3.5 w-full' />
                         {
                             Array(5).fill(5).map((_, i) => (
-                                <div className='pt-6'>
-                                    <div className='flex justify-between'>
+                                <div className='pt-6  '>
+                                    <div className='flex justify-between px-1'>
                                         <div className='flex items-center'>
                                             <div className='h-[44px] w-[44px] rounded-full'>
                                                 <img src={user} alt="user" className='object-cover' />

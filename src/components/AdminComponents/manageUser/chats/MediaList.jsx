@@ -11,7 +11,7 @@ const MediaList = () => {
   const media = [
     { pic: filepdf, heading: "i9.pdf", file: "PDF", size: "9" },
     { pic: filexls, heading: "Screenshot-3817.png", file: "PNG", size: "4" },
-    { pic: filepdf, heading: "sharefile.docx", file: "DOC", size: "555" },
+    { pic: filepdf, heading: "share-file.docx", file: "DOC", size: "555" },
     { pic: filepdf, heading: "Jerry-2020_I-9_Form.xxl", file: "XXL", size: "24" },
     { pic: filepdf, heading: "i9.pdf", file: "PDF", size: "9" },
   ]
@@ -42,9 +42,9 @@ const MediaList = () => {
                     item?.file === "PDF" || item?.file === "PNG" ?
                       < img src={item?.pic} alt="close" className='object-cover' />
                       :
-                      <div className='bg-[#EBEBEB] rounded-md p-3'>
                         <img src={item?.file === "DOC" ? docCode : item?.file === "XXL" ? docXXl : ""} alt="close" className='object-cover' />
-                      </div>
+                      // <div className='bg-[#EBEBEB] rounded-md p-3'>
+                      // </div>
                   }
                   <div className='ml-4'>
                     <h2 className='text-[12px] font-semibold text-[#444444] '>{item?.heading}</h2>
