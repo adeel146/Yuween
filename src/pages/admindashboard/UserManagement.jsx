@@ -46,35 +46,66 @@ const UserManagement = () => {
               </div>
             )}
             <div className="gap-5 col-span-6 lg:col-span-4 flex  ">
-              <div className=" w-[40%] shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] bg-white rounded-md p-4">
-                <div className="border-l-4 px-3 h-[80px] ">
-                  <h1 className="text-[#98A2B3] text-[14px]">Today request</h1>
-                  {Static?.recevied_request ? (
-                    <h1 className="  text-[#FF8C00] text-[18px] pt-2 ">
-                      {Static?.recevied_request}
+              {
+                location === "/vehicalRenters" 
+                ?
+                <div className=" w-[40%] shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] bg-white rounded-md p-4">
+                  <div className="border-l-4 px-3 h-[80px] ">
+                    <h1 className="text-[#98A2B3] text-[14px]">Today requests</h1>
+                    {Static?.recevied_request ? (
+                      <h1 className="  text-[#FF8C00] text-[18px] pt-2 ">
+                        {Static?.recevied_request}
+                      </h1>
+                    ) : (
+                      <LoaderSpinner type="weight" color="#FF8C00" />
+                    )}
+                  </div>
+                  <hr className="mt-[25px] mb-[20px]" />
+                  <div className="border-l-4 px-3  h-[80px]">
+                    <h1 className="text-[#98A2B3] text-[14px]">
+                      Approved requests
                     </h1>
-                  ) : (
-                    <LoaderSpinner type="weight" color="#FF8C00" />
-                  )}
+                    {Static?.approved_requests ? (
+                      <h1 className="  text-[#FF8C00] text-[18px] pt-2 ">
+                        {Static?.approved_requests}
+                      </h1>
+                    ) : (
+                      <LoaderSpinner type="weight" color="#FF8C00" />
+                    )}
+                  </div>
                 </div>
-                <hr className="mt-[25px] mb-[20px]" />
-                <div className="border-l-4 px-3  h-[80px]">
-                  <h1 className="text-[#98A2B3] text-[14px]">
-                    Approved request
-                  </h1>
-                  {Static?.approved_requests ? (
-                    <h1 className="  text-[#FF8C00] text-[18px] pt-2 ">
-                      {Static?.approved_requests}
-                    </h1>
-                  ) : (
-                    <LoaderSpinner type="weight" color="#FF8C00" />
-                  )}
-                </div>
-              </div>
 
+                :
+
+                <div className=" w-[40%] shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] bg-white rounded-md p-4">
+                  <div className="border-l-4 px-3 h-[80px] ">
+                    <h1 className="text-[#98A2B3] text-[14px]">Recieved requests</h1>
+                    {Static?.recevied_request ? (
+                      <h1 className="  text-[#FF8C00] text-[18px] pt-2 ">
+                        {Static?.recevied_request}
+                      </h1>
+                    ) : (
+                      <LoaderSpinner type="weight" color="#FF8C00" />
+                    )}
+                  </div>
+                  <hr className="mt-[25px] mb-[20px]" />
+                  <div className="border-l-4 px-3  h-[80px]">
+                    <h1 className="text-[#98A2B3] text-[14px]">
+                      Approved requests
+                    </h1>
+                    {Static?.approved_requests ? (
+                      <h1 className="  text-[#FF8C00] text-[18px] pt-2 ">
+                        {Static?.approved_requests}
+                      </h1>
+                    ) : (
+                      <LoaderSpinner type="weight" color="#FF8C00" />
+                    )}
+                  </div>
+                </div>
+              }
               <div className="bg-[#FFEFDC] rounded-md lg:h-[250px] h-full py-2 px-4 w-[60%] ">
                 <h1 className=" text-[14px] leading-[24px]">
-                  Total car renter requests
+                  { location === "/vehicalRenters" ? "Total car renter requests" : "Total car owner's requests" }
                 </h1>
                 <div className="flex justify-end mt-5">
                   <img src={rentcar} alt="rent-car" className="object-cover " />
@@ -91,7 +122,7 @@ const UserManagement = () => {
           </div>
 
           <div className="shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] bg-white rounded-md p-5 mt-5">
-            <DataTable setDetail={setDetail} setRentalUser={setRentalUser} />
+            <DataTable setDetail={setDetail} location={ location } setRentalUser={setRentalUser} />
           </div>
         </>
       ) : (

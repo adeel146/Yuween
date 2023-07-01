@@ -193,7 +193,7 @@ const DataList = ({ setDetail, title }) => {
                               </button>
                               <ul
                                 class="bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] border-0 rounded-md p-4 transform scale-0 group-hover:scale-100 absolute 
-  transition duration-150 ease-in-out right-7 origin-top lg:w-[15%]  "
+  transition duration-150 ease-in-out right-7 origin-top xl:w-[15%]  "
                               >
                                 <li
                                   onClick={() => setDetail(true)}
@@ -305,7 +305,7 @@ const DataList = ({ setDetail, title }) => {
                               </button>
                               <ul
                                 class="bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] border-0 rounded-md p-4 transform scale-0 group-hover:scale-100 absolute 
-  transition duration-150 ease-in-out right-7 origin-top lg:w-[15%]  "
+  transition duration-150 ease-in-out right-7 origin-top xl:w-[15%]  "
                               >
                                 <li
                                   onClick={() => setDetail(true)}

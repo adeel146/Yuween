@@ -283,7 +283,7 @@ const DataList = ({ setDetail, setRentalUser }) => {
                       //                                                                 </button>
                       //                                                                 <ul
                       //                                                                     class="bg-white shadow-md border broder-gray-100  rounded-md transform scale-0 group-hover:scale-100 absolute
-                      // transition duration-150 ease-in-out right-7 origin-top lg:w-[15%]  "
+                      // transition duration-150 ease-in-out right-7 origin-top xl:w-[15%]  "
                       //                                                                 >
                       //                                                                     <li onClick={() => { return setDetail(true), setRentalUser(item?.user) }} class="rounded-sm actions flex items-center px-3 py-3 hover:bg-gray-100">
                       //                                                                         <BsEye className='text-[15px] text-[#98A2B3]' />
@@ -408,7 +408,7 @@ const DataList = ({ setDetail, setRentalUser }) => {
                               </button>
                               <ul
                                 class="bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] border-0 rounded-md p-4 transform scale-0 group-hover:scale-100 absolute 
-  transition duration-150 ease-in-out right-7 origin-top lg:w-[15%]  "
+  transition duration-150 ease-in-out right-7 origin-top xl:w-[15%]  "
                               >
                                 <li
                                   onClick={() => {
