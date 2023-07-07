@@ -1,18 +1,8 @@
-import React, { useState } from 'react'
-import Table from '../../components/AdminComponents/CustomerSupports/DataTable/Table'
-import TicketDetail from '../../components/AdminComponents/CustomerSupports/DetailTicket/TicketDetail'
+import React from "react";
+import Table from "../../components/AdminComponents/CustomerSupports/Reports";
 
 const Reports = () => {
-    const [detail, setDetail] = useState(false)
-    return (
-        <>
-            {detail === false ?
-                <Table setDetail={setDetail} />
-                :
-                <TicketDetail/>
-            }
-        </>
-    )
-}
+  return <Table />;
+};
 
-export default Reports
+export default Reports;

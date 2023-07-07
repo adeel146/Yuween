@@ -17,7 +17,7 @@ import {
 import { Truncate } from "../../../../util/TrucateString";
 import LoaderSpinner from "../../../../util/LoaderSpinner";
 import EditData from "../EditData";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import EyeIcon from "../../../../assests/EyeIcon";
 import RefreshIcon from "../../../../assests/RefreshIcon";
 import TrashIcon from "../../../../assests/TrashIcon";
@@ -38,6 +38,7 @@ const DataList = ({
   const [singleVehical, setSingleVehical] = useState({});
   // const [vehicalList, setVehicalList] = useState([])
   const location = useLocation().pathname;
+  const navigate = useNavigate();
 
   // const items = [];
   // const [itemOffset, setItemOffset] = useState(0);
@@ -327,10 +328,8 @@ const DataList = ({
                                 >
                                   <li
                                     onClick={() => {
-                                      return (
-                                        setDetail(true),
-                                        setRentalUser(item?.user)
-                                      );
+                                      navigate(`/vehicalRenters/detail/${1}`);
+                                      setRentalUser(item?.user);
                                     }}
                                     className="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
                                   >
@@ -476,10 +475,8 @@ const DataList = ({
                                 >
                                   <li
                                     onClick={() => {
-                                      return (
-                                        setDetail(true),
-                                        setRentalUser(item?.user)
-                                      );
+                                      navigate(`/vehicalRenters/detail/${1}`);
+                                      setRentalUser(item?.user);
                                     }}
                                     className="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
                                   >

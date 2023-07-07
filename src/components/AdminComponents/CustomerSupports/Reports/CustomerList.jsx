@@ -122,7 +122,7 @@ const TicketDetail = () => {
                                 <h2 className="ml-2">Delete</h2>
                               </li>
                               <li
-                                onClick={() => navigate(`/ticket-detail/${1}`)}
+                                onClick={() => navigate(`/report-detail/${1}`)}
                                 class="rounded-sm actions flex items-center px-2 py-2 hover:bg-gray-100"
                               >
                                 <EyeIcon className="" />

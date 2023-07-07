@@ -149,7 +149,7 @@ function Sidebar({
                                       if (subitem.subMenuItems.length === 0) {
                                         return (
                                           <li key={s_index} className="mb-1 last:mb-0">
-                                            <NavLink end to={subitem.path} className={({ isActive }) => 'block text-white  px-8 py-2  sdfdsf w-full   transition duration-150 truncate ' + (isActive ? '!text-[#FF8C00] border rounded-md shadow-md  bg-white  font-bold' : '')}>
+                                            <NavLink end to={subitem.path} className={({ isActive }) => 'block text-white  px-8 py-2  sdfdsf w-full   transition duration-150 truncate ' + (pathname.includes(subitem.path) ? '!text-[#FF8C00] border rounded-md shadow-md  bg-white  font-bold' : '')}>
                                               <span className="text-[16px]    font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
                                                 {subitem.label}
                                               </span>
