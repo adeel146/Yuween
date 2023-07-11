@@ -36,9 +36,11 @@ const RentalIndex = ({ rentalUser }) => {
   return (
     <>
       <h2 className="text-[#444444] font-semibold text-[20px] leading-[30px]">
-        {location === "/vehicalOwner" ? "Vehicle Owner" : "Vehicle Renters"}
+        {location.includes("/vehicalOwner")
+          ? "Vehicle Owner"
+          : "Vehicle Renters"}
       </h2>
-      {location === "/vehicalOwner" ? (
+      {location.includes("/vehicalOwner") ? (
         <>
           <div
             className="select-wrapper px-4 mx-2 border-0 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] rounded-md bg-white xl:hidden md:hidden w-full py-2 focus:outline-none mt-2 "

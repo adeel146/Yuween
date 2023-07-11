@@ -475,7 +475,7 @@ const DataList = ({
                                 >
                                   <li
                                     onClick={() => {
-                                      navigate(`/vehicalRenters/detail/${1}`);
+                                      navigate(`/vehicalOwner/detail/${1}`);
                                       setRentalUser(item?.user);
                                     }}
                                     className="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"

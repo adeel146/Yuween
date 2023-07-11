@@ -11,6 +11,7 @@ import DeleteData from "../../marketing/DeleteData";
 import EyeIcon from "../../../../assests/EyeIcon";
 import RefreshIcon from "../../../../assests/RefreshIcon";
 import TrashIcon from "../../../../assests/TrashIcon";
+import { useNavigate } from "react-router-dom";
 const DataList = ({ setDetail, title }) => {
   const items = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
@@ -22,6 +23,7 @@ const DataList = ({ setDetail, title }) => {
   const endOffset = itemOffset + itemperPage;
   const currentItems = items.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(items.length / itemperPage);
+  const navigate = useNavigate();
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemperPage) % items.length;
@@ -196,7 +198,9 @@ const DataList = ({ setDetail, title }) => {
   transition duration-150 ease-in-out right-7 origin-top xl:w-[15%]  "
                               >
                                 <li
-                                  onClick={() => setDetail(true)}
+                                  onClick={() =>
+                                    navigate(`/management/detail/${1}`)
+                                  }
                                   class="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
                                 >
                                   <EyeIcon className="text-[15px] text-[#98A2B3]" />
@@ -308,7 +312,9 @@ const DataList = ({ setDetail, title }) => {
   transition duration-150 ease-in-out right-7 origin-top xl:w-[15%]  "
                               >
                                 <li
-                                  onClick={() => setDetail(true)}
+                                  onClick={() =>
+                                    navigate(`/management/detail/${1}`)
+                                  }
                                   class="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
                                 >
                                   <EyeIcon className="text-[15px] text-[#98A2B3]" />

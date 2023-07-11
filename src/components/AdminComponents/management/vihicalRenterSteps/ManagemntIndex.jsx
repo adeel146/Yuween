@@ -3,16 +3,20 @@ import Reviews from "./Reviews";
 import VihicalManagement from "./VihicalManagement";
 import BookingManagement from "./BookingMangement";
 import PaymentManagement from "./PaymentManagement";
+import { useDispatch, useSelector } from "react-redux";
+import { UpdateManagementIndex } from "../../../../Redux/UserAuthSlice/UserAuthSlice";
 
 const ManagementIndex = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
   let list = [
     "Vehicle Management",
     "Booking Management",
     "Payment Management",
     "Rating Reviews Management",
   ];
+  const dispatch = useDispatch();
+  const activeIndex = useSelector(
+    (state) => state.userAuth.managementSelectedIndex
+  );
   return (
     <>
       <div className="flex lg:flex-nowrap  flex-wrap  items-center   mt-3">
@@ -24,7 +28,7 @@ const ManagementIndex = () => {
               activeIndex === i &&
               "border-b-2 text-center text-[16px]   border-[#FF8C00] !text-[#444444] font-semibold"
             }`}
-            onClick={() => setActiveIndex(i)}
+            onClick={() => dispatch(UpdateManagementIndex(i))}
             key={i}
           >
             {" "}

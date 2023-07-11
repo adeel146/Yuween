@@ -9,6 +9,7 @@ import {
 import Popup from "../../../../../util/popup/Popup";
 import CancelBooking from "./CancelBooking";
 import EyeIcon from "../../../../../assests/EyeIcon";
+import { useNavigate } from "react-router-dom";
 const DataList = ({ setDetail }) => {
   const items = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
@@ -25,6 +26,7 @@ const DataList = ({ setDetail }) => {
     const newOffset = (event.selected * itemperPage) % items.length;
     setItemOffset(newOffset);
   };
+  const navigate = useNavigate();
 
   const [show, setShow] = useState(false);
 
@@ -146,7 +148,7 @@ const DataList = ({ setDetail }) => {
                             >
                               <li
                                 onClick={() => {
-                                  setDetail(true);
+                                  navigate(`/management/booking-detail/${1}`);
                                 }}
                                 className="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
                               >

@@ -34,6 +34,9 @@ import Forgot from "../pages/authpages/Forgot";
 import RentalIndex from "../components/AdminComponents/manageUser/vihicalRenterSteps/RentalIndex";
 import TicketDetail from "../components/AdminComponents/CustomerSupports/DetailTicket/TicketDetail";
 import ReportDetail from "../components/AdminComponents/CustomerSupports/DetailReport";
+import CarlistDetail from "../components/AdminComponents/management/vihicalRenterSteps/carlistDetail/CarlistDetail";
+import BookingDetail from "../components/AdminComponents/management/vihicalRenterSteps/bookingTables/BookingDetail";
+import PaymentDetail from "../components/AdminComponents/management/vihicalRenterSteps/PaymentTables/PaymentDetail";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -60,6 +63,7 @@ const router = createBrowserRouter(
         <Route path="/vehicalRenters" element={<UserManagement />} />
         <Route path="/vehicalRenters/detail/:id" element={<RentalIndex />} />
         <Route path="/vehicalOwner" element={<UserManagement />} />
+        <Route path="/vehicalOwner/detail/:id" element={<RentalIndex />} />
         <Route path="/customerRenter" element={<CustomerReports />} />
         <Route path="/customerOwner" element={<CustomerReports />} />
         <Route path="/globelRenter" element={<GlobelReports />} />
@@ -67,6 +71,9 @@ const router = createBrowserRouter(
         <Route path="/broadcast" element={<BroadCast />} />
         <Route path="/manageRole" element={<ManageRoles />} />
         <Route path="/management" element={<Managements />} />
+        <Route path="/management/booking-detail/:id" element={<BookingDetail />} />
+        <Route path="/management/payment-detail/:id" element={<PaymentDetail />} />
+        <Route path="/management/detail/:id" element={<CarlistDetail />} />
         <Route path="/marketing" element={<Marketing />} />
         <Route path="/ticket" element={<Tickets />} />
         <Route path="/ticket-detail/:id" element={<TicketDetail />} />
