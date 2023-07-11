@@ -16,7 +16,7 @@ import EyeIcon from "../../../../assests/EyeIcon";
 import RefreshIcon from "../../../../assests/RefreshIcon";
 import EditIcon from "../../../../assests/EditIcon";
 import TrashIcon from "../../../../assests/TrashIcon";
-const CarList = ({ rentalUser }) => {
+const CarList = ({ rentalUser, CarlistDetail, setcarListDetail }) => {
   const [detail, setDetail] = useState(false);
   const [show, setShow] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -59,7 +59,7 @@ const CarList = ({ rentalUser }) => {
         data={type === "Edit" && <EditData setShow={(val) => setShow(val)} />}
         onClose={() => setShow(false)}
       />
-      {detail === false ? (
+      {CarlistDetail === false ? (
         <>
           {!loading ? (
             carList?.map((item, i) => (
@@ -106,7 +106,7 @@ const CarList = ({ rentalUser }) => {
   transition duration-150 ease-in-out right-7 origin-top xl:w-[15%]  "
                           >
                             <li
-                              onClick={() => setDetail(true)}
+                              onClick={() => setcarListDetail(true)}
                               class="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
                             >
                               <EyeIcon className=" text-[#98A2B3]" />

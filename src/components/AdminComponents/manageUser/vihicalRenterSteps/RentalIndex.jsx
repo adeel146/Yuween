@@ -10,6 +10,7 @@ import CarList from "./CarList";
 
 const RentalIndex = ({ rentalUser }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [carListDetail, setcarListDetail] = useState(false);
 
   let location = useLocation().pathname;
 
@@ -91,7 +92,10 @@ const RentalIndex = ({ rentalUser }) => {
                   activeIndex === i &&
                   "border-b-2  text-center  border-[#FF8C00] !text-[#444444] font-semibold"
                 }`}
-                onClick={() => setActiveIndex(i)}
+                onClick={() => {
+                  setActiveIndex(i);
+                  setcarListDetail(false);
+                }}
                 key={i}
               >
                 {" "}
@@ -106,7 +110,11 @@ const RentalIndex = ({ rentalUser }) => {
         {activeIndex === 0 && <RenterDetail rentalUser={rentalUser} />}
         {activeIndex === 1 && <Reviews />}
         {activeIndex === 2 && location === "/vehicalOwner" ? (
-          <CarList rentalUser={rentalUser} />
+          <CarList
+            rentalUser={rentalUser}
+            carListDetail={carListDetail}
+            setcarListDetail={setcarListDetail}
+          />
         ) : activeIndex === 2 && location === "/vehicalRenters" ? (
           <CarRequest />
         ) : (
