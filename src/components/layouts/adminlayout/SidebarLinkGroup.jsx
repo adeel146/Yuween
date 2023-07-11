@@ -10,9 +10,9 @@ function SidebarLinkGroup({ children, activecondition, level, height }) {
   //bg-gray-100
   return (
     <li
-      className={`${level === 1 ? "px-3" : ""} py-2 rounded-sm ${
-        height < 700 ? "mb-0" : "mb-4"
-      } last:mb-0`}
+      className={`${
+        level === 1 ? "px-3" : ""
+      } py-2 rounded-sm ${"mb-4"} last:mb-0`}
     >
       {children(handleClick, open)}
     </li>

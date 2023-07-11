@@ -136,25 +136,26 @@ const DataList = ({ setDetail }) => {
                           {/* <BsThreeDotsVertical className='text-[20px] text-[#898989]' /> */}
                           {/* <GenericDrodown /> */}
 
-                          <div class="group inline-block">
-                            <button class="outline-none focus:outline-none  px-3 py-1 bg-white rounded-sm flex items-center">
+                          <div className="group inline-block">
+                            <button className="outline-none focus:outline-none  px-3 py-1 bg-white rounded-sm flex items-center">
                               <BsThreeDotsVertical className="text-[20px] text-[#898989]" />
                             </button>
                             <ul
-                              class="bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] border-0 rounded-md p-4 transform scale-0 group-hover:scale-100 absolute 
-  transition duration-150 ease-in-out right-7 origin-top lg:w-[14%]  "
+                              className="bg-white shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] border-0 rounded-md p-4 transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out right-7 origin-top xl:w-[15%]  "
                             >
                               <li
-                                onClick={() => setDetail(true)}
-                                class="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
+                                onClick={() => {
+                                  setDetail(true);
+                                }}
+                                className="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
                               >
-                                <EyeIcon />
+                                <EyeIcon className="text-[14px] text-[#98A2B3]" />
                                 <h2 className="ml-2">View details</h2>
                               </li>
-
                               <li
                                 onClick={(e) => openPopup(e)}
-                                class="rounded-sm flex items-center px-2 py-2 hover:bg-gray-100"
+                                className="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
                               >
                                 <img
                                   src={close}

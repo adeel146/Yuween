@@ -111,7 +111,7 @@ function Sidebar({
                   {group.menuitems?.map((item, index) => {
                     if (item.subMenuItems.length === 0) {
                       return (
-                        <li key={index} className={`px-3 py-2 rounded-md ${ height<700?"mb-0":"mb-4"}  last:mb-0 ${pathname.includes(item.pathname) && 'bg-[white]'}`}>
+                        <li key={index} className={`px-3 py-2 rounded-md mb-4  last:mb-0 ${pathname.includes(item.pathname) && 'bg-[white]'}`}>
                           <NavLink end to={item.path} className={`block text-white   ${pathname.includes(item.pathname) ? '!text-[#FF8C00] bg-white' : ''}  truncate transition duration-150 ${pathname.includes(item.pathname) ? '' : ""}`} >
                             <div className="flex items-center justify-start  ">
                               <p className='contents w-[60%]'>{pathname.includes(item.pathname) ? item.activeLeftIcon : item.leftIcon}</p>

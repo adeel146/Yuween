@@ -40,7 +40,10 @@ const RentalIndex = ({ rentalUser }) => {
       </h2>
       {location === "/vehicalOwner" ? (
         <>
-          <div className="select-wrapper px-4 mx-2 border-0 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] rounded-md bg-white xl:hidden md:hidden w-full py-2 focus:outline-none mt-2 " onChange={(e) => handlClick(e.target.value)}>
+          <div
+            className="select-wrapper px-4 mx-2 border-0 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] rounded-md bg-white xl:hidden md:hidden w-full py-2 focus:outline-none mt-2 "
+            onChange={(e) => handlClick(e.target.value)}
+          >
             <select className=" w-[98%]  focus:outline-none  p-1 ">
               <option value="">Please Select</option>
               {listOwner.map((list, i) => (
@@ -53,7 +56,7 @@ const RentalIndex = ({ rentalUser }) => {
           <div className="xl:flex md:flex hidden justify-between items-center border-b-2  mt-3">
             {listOwner.map((list, i) => (
               <h1
-                className={`lg:w-[170px] text-center cursor-pointer text-[#ACACAC] px-3 py-2 text-[16px] ${
+                className={`lg:w-[170px] text-center cursor-pointer text-[#ACACAC] px-3 py-2 text-[15px] ${
                   activeIndex === i &&
                   "border-b-2  text-center border-[#FF8C00] !text-[#444444] font-semibold"
                 }`}
@@ -82,7 +85,7 @@ const RentalIndex = ({ rentalUser }) => {
           <div className="xl:flex md:flex hidden justify-between items-center border-b-2  mt-3">
             {list.map((list, i) => (
               <h1
-                className={`xl:w-[170px] md:w-auto w-[165px] text-center cursor-pointer text-[#ACACAC] px-3 py-2 text-[16px] leading-[21px] ${
+                className={`xl:w-[170px] md:w-auto w-[165px] text-center cursor-pointer text-[#ACACAC] px-3 py-2 text-[15px] leading-[21px] ${
                   activeIndex === i &&
                   "border-b-2  text-center  border-[#FF8C00] !text-[#444444] font-semibold"
                 }`}

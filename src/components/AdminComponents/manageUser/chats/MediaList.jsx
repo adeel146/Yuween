@@ -42,7 +42,7 @@ const MediaList = () => {
                     item?.file === "PDF" || item?.file === "PNG" ?
                       < img src={item?.pic} alt="close" className='object-cover' />
                       :
-                        <img src={item?.file === "DOC" ? docCode : item?.file === "XXL" ? docXXl : ""} alt="close" className='object-cover' />
+                        <img src={item?.file === "DOC" ? docCode : item?.file === "XXL" ? docXXl : ""} width='37px' height='37px' alt="close" className='object-cover' />
                       // <div className='bg-[#EBEBEB] rounded-md p-3'>
                       // </div>
                   }
