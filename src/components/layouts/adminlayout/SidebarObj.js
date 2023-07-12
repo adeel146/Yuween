@@ -259,7 +259,7 @@ const SidebarObj = () => {
             <img
               width="15px"
               height="15px"
-              src={icon19}
+              src={icon9}
               alt="icon"
               className="object-cover"
             />
