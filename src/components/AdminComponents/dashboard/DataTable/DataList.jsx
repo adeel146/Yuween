@@ -21,6 +21,7 @@ import EditData from "../../manageUser/EditData";
 import EyeIcon from "../../../../assests/EyeIcon";
 import RefreshIcon from "../../../../assests/RefreshIcon";
 import TrashIcon from "../../../../assests/TrashIcon";
+import { useNavigate } from "react-router-dom";
 const DataList = ({ setDetail, setRentalUser }) => {
   const [show, setShow] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -29,6 +30,7 @@ const DataList = ({ setDetail, setRentalUser }) => {
   const [vehicalStatus, setVehicalStatus] = useState(null);
   const [singleVehical, setSingleVehical] = useState({});
   const [vehicalList, setVehicalList] = useState([]);
+  const navigate = useNavigate();
   // const items = [];
   // const [itemOffset, setItemOffset] = useState(0);
   const [itemperPage] = useState(10);
@@ -413,7 +415,8 @@ const DataList = ({ setDetail, setRentalUser }) => {
                                 <li
                                   onClick={() => {
                                     return (
-                                      setDetail(true), setRentalUser(item?.user)
+                                      navigate(`/dashboard/vehical-detail/${1}`),
+                                      setRentalUser(item?.user)
                                     );
                                   }}
                                   class="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"

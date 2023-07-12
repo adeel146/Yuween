@@ -16,8 +16,7 @@ import EyeIcon from "../../../../assests/EyeIcon";
 import RefreshIcon from "../../../../assests/RefreshIcon";
 import EditIcon from "../../../../assests/EditIcon";
 import TrashIcon from "../../../../assests/TrashIcon";
-const CarList = ({ rentalUser, CarlistDetail, setcarListDetail }) => {
-  const [detail, setDetail] = useState(false);
+const CarList = ({ rentalUser, CarlistDetail: detail, setcarListDetail }) => {
   const [show, setShow] = useState(false);
   const [loading, setLoading] = useState(false);
   const [carList, setCarList] = useState([]);
@@ -59,7 +58,7 @@ const CarList = ({ rentalUser, CarlistDetail, setcarListDetail }) => {
         data={type === "Edit" && <EditData setShow={(val) => setShow(val)} />}
         onClose={() => setShow(false)}
       />
-      {CarlistDetail === false ? (
+      {detail === false ? (
         <>
           {!loading ? (
             carList?.map((item, i) => (

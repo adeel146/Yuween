@@ -60,6 +60,10 @@ const router = createBrowserRouter(
       {/* Dashboard */}
       <Route element={<AuthProvider />}>
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route
+          path="/dashboard/vehical-detail/:id"
+          element={<CarlistDetail name="Dashboard" />}
+        />
         <Route path="/vehicalRenters" element={<UserManagement />} />
         <Route path="/vehicalRenters/detail/:id" element={<RentalIndex />} />
         <Route path="/vehicalOwner" element={<UserManagement />} />
@@ -71,8 +75,14 @@ const router = createBrowserRouter(
         <Route path="/broadcast" element={<BroadCast />} />
         <Route path="/manageRole" element={<ManageRoles />} />
         <Route path="/management" element={<Managements />} />
-        <Route path="/management/booking-detail/:id" element={<BookingDetail />} />
-        <Route path="/management/payment-detail/:id" element={<PaymentDetail />} />
+        <Route
+          path="/management/booking-detail/:id"
+          element={<BookingDetail />}
+        />
+        <Route
+          path="/management/payment-detail/:id"
+          element={<PaymentDetail />}
+        />
         <Route path="/management/detail/:id" element={<CarlistDetail />} />
         <Route path="/marketing" element={<Marketing />} />
         <Route path="/ticket" element={<Tickets />} />
