@@ -21,7 +21,9 @@ const ManagementIndex = () => {
     <>
       <select
         className="border-0 shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] rounded-md bg-white px-2 xl:hidden md:hidden w-full py-2 focus:outline-none mt-2"
-        onChange={(e) => dispatch(UpdateManagementIndex(e.target.value))}
+        onChange={(e, s) => {
+          dispatch(UpdateManagementIndex(+e.target.value));
+        }}
       >
         <option value="">Please Select</option>
         {list.map((list, i) => (
