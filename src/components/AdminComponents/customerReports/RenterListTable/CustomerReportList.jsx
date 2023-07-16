@@ -9,7 +9,7 @@ import {
 import { BiRefresh } from "react-icons/bi";
 import Popup from "../../../../util/popup/Popup";
 import DeleteData from "../../marketing/DeleteData";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import EyeIcon from "../../../../assests/EyeIcon";
 import RefreshIcon from "../../../../assests/RefreshIcon";
 import TrashIcon from "../../../../assests/TrashIcon";
@@ -22,6 +22,7 @@ const CustomerReportList = ({ setDetail }) => {
   const [itemOffset, setItemOffset] = useState(0);
   const [itemperPage, setItemPerPage] = useState(6);
   const location = useLocation().pathname;
+  const navigate = useNavigate();
 
   const endOffset = itemOffset + itemperPage;
   const currentItems = items.slice(itemOffset, endOffset);
@@ -210,7 +211,9 @@ const CustomerReportList = ({ setDetail }) => {
   transition duration-150 ease-in-out right-7 origin-top xl:w-[15%]  "
                               >
                                 <li
-                                  onClick={() => setDetail(true)}
+                                  onClick={() =>
+                                    navigate(`/customerRenter/detail/${1}`)
+                                  }
                                   class="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
                                 >
                                   <EyeIcon className=" text-[#98A2B3]" />
@@ -329,7 +332,9 @@ const CustomerReportList = ({ setDetail }) => {
   transition duration-150 ease-in-out right-7 origin-top xl:w-[15%]  "
                               >
                                 <li
-                                  onClick={() => setDetail(true)}
+                                  onClick={() =>
+                                    navigate(`/customerOwner/detail/${1}`)
+                                  }
                                   class="rounded-sm actions flex items-center px-2 py-2 mb-2 hover:bg-gray-100"
                                 >
                                   <EyeIcon className=" text-[#98A2B3]" />

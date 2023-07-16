@@ -37,6 +37,7 @@ import ReportDetail from "../components/AdminComponents/CustomerSupports/DetailR
 import CarlistDetail from "../components/AdminComponents/management/vihicalRenterSteps/carlistDetail/CarlistDetail";
 import BookingDetail from "../components/AdminComponents/management/vihicalRenterSteps/bookingTables/BookingDetail";
 import PaymentDetail from "../components/AdminComponents/management/vihicalRenterSteps/PaymentTables/PaymentDetail";
+import RenterDetail from "../components/AdminComponents/manageUser/vihicalRenterSteps/RenterDetail";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -69,7 +70,9 @@ const router = createBrowserRouter(
         <Route path="/vehicalOwner" element={<UserManagement />} />
         <Route path="/vehicalOwner/detail/:id" element={<RentalIndex />} />
         <Route path="/customerRenter" element={<CustomerReports />} />
+        <Route path="/customerRenter/detail/:id" element={<RenterDetail />} />
         <Route path="/customerOwner" element={<CustomerReports />} />
+        <Route path="/customerOwner/detail/:id" element={<CarlistDetail />} />
         <Route path="/globelRenter" element={<GlobelReports />} />
         <Route path="/globelOwner" element={<GlobelReports />} />
         <Route path="/broadcast" element={<BroadCast />} />
