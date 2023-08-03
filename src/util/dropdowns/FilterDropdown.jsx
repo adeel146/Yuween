@@ -8,7 +8,7 @@ function FilterDropdown({ setVehicalList, setLoading, setTypes, list }) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [filterList, setFilterList] = useState("Filter");
   const [List, setList] = useState(
-    list || ["all", "incomplete", "pending", "approved", "rejected", "inactive"]
+    list || ["All", "Incomplete", "Pending", "Approved", "Rejected", "Inactive"]
   );
 
   const trigger = useRef(null);

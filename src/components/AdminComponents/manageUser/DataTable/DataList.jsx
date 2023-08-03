@@ -166,7 +166,7 @@ const DataList = ({
                     <tr className="text-[#626973]">
                       <th className="px-4 py-4 pr-[25px] whitespace-nowrap w-px">
                         <div className="font-[600] text-[14px] text-left">
-                          Vehicle Owner{" "}
+                          Vehicle Renter{" "}
                         </div>
                       </th>
                       <th className="px-4 py-4 pr-[25px] whitespace-nowrap">

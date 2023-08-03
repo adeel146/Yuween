@@ -12,6 +12,7 @@ const RentalIndex = ({ rentalUser }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [carListDetail, setcarListDetail] = useState(false);
 
+
   let location = useLocation().pathname;
 
   let list = [
@@ -109,13 +110,13 @@ const RentalIndex = ({ rentalUser }) => {
       <div className="mt-5">
         {activeIndex === 0 && <RenterDetail rentalUser={rentalUser} />}
         {activeIndex === 1 && <Reviews />}
-        {activeIndex === 2 && location === "/vehicalOwner" ? (
+        {activeIndex === 2 && location.includes("/vehicalOwner") ? (
           <CarList
             rentalUser={rentalUser}
             carListDetail={carListDetail}
             setcarListDetail={setcarListDetail}
           />
-        ) : activeIndex === 2 && location === "/vehicalRenters" ? (
+        ) : activeIndex === 2 && location.includes("/vehicalRenters") ? (
           <CarRequest />
         ) : (
           ""

@@ -92,7 +92,7 @@ const DashboardChart = () => {
     "18th",
   ];
   const valdashboard = [0, 1000, 1500, 2000, 2500, 3000];
-  const valuser = [20, 35, 155, 25, 120];
+  const valuser = [180,170,160,150,170,190,180,170,180,80,110,120];
   const data = {
     labels: location === "/dashboard" ? label2 : label,
     datasets: [

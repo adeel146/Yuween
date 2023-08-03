@@ -93,12 +93,12 @@ const SidebarObj = () => {
           pathname: "/customerRenter",
           subMenuItems: [
             {
-              label: "Car Renters",
+              label: "Vehical Renters",
               path: "/customerRenter",
               subMenuItems: [],
             },
             {
-              label: "Car Owners",
+              label: "Vehical Owners",
               path: "/customerOwner",
               subMenuItems: [],
             },
@@ -130,12 +130,12 @@ const SidebarObj = () => {
           pathname: "globelRenter",
           subMenuItems: [
             {
-              label: "Car Renters",
+              label: "Vehical Renters",
               path: "/globelRenter",
               subMenuItems: [],
             },
             {
-              label: "Car Owners",
+              label: "Vehical Owners",
               path: "/globelOwner",
               subMenuItems: [],
             },

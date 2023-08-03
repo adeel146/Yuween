@@ -29,7 +29,7 @@ const PieChart = () => {
                 <div className="flex items-center ">
                   <div className="border w-[13px] h-[13px] bg-[#58D764]" />
                   <h2 className="pl-1 text-[15px] text-[#444444]">
-                    Spend Statistics Over Time
+                    Spend  Over Time
                   </h2>
                 </div>
                 <h2 className="pl-5 text-[15px] text-[#444444]">20</h2>
@@ -38,7 +38,7 @@ const PieChart = () => {
                 <div className="flex items-center ">
                   <div className="border w-[13px] h-[13px] bg-[#FF903E]" />
                   <h2 className="pl-1 text-[15px] text-[#444444]">
-                    Refund Statistics Over time
+                    Refund  Over time
                   </h2>
                 </div>
                 <h2 className="pl-5 text-[15px] text-[#444444]">20</h2>
@@ -47,7 +47,7 @@ const PieChart = () => {
                 <div className="flex items-center ">
                   <div className="border w-[13px] h-[13px] bg-[#EF7BE3] " />
                   <h2 className="pl-1 text-[15px] text-[#444444]">
-                    Paid Services statictics
+                  Expired Requests
                   </h2>
                 </div>
                 <h2 className="pl-5 text-[15px] text-[#444444]">20</h2>
